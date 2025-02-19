@@ -1,0 +1,956 @@
+@prefix : <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix untitled-ontology-9: <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#> .
+@base <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9/> .
+
+<http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#evalue
+untitled-ontology-9:evalue rdf:type owl:ObjectProperty ;
+                           rdfs:domain untitled-ontology-9:UE ;
+                           rdfs:range untitled-ontology-9:Competences .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#permetdAcquerir
+untitled-ontology-9:permetdAcquerir rdf:type owl:ObjectProperty ;
+                                    rdfs:domain untitled-ontology-9:UE ;
+                                    rdfs:range untitled-ontology-9:Competences .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#prerequiert
+untitled-ontology-9:prerequiert rdf:type owl:ObjectProperty ;
+                                rdfs:domain untitled-ontology-9:UE ;
+                                rdfs:range untitled-ontology-9:Competences .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#duree_en_heures
+untitled-ontology-9:duree_en_heures rdf:type owl:DatatypeProperty ;
+                                    rdfs:range xsd:integer .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Appliquer_les_bonnes_pratiques_pour_gerer_les_risques_IA
+untitled-ontology-9:Appliquer_les_bonnes_pratiques_pour_gerer_les_risques_IA rdf:type owl:Class ;
+                                                                             rdfs:subClassOf untitled-ontology-9:Evaluer_la_faisabilite_d_un_besoin_metier .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Architecture
+untitled-ontology-9:Architecture rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-9:Competences_techniques .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Auditer_la_qualite_des_donnees
+untitled-ontology-9:Auditer_la_qualite_des_donnees rdf:type owl:Class ;
+                                                   rdfs:subClassOf untitled-ontology-9:Donnees .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Auditer_les_sources_de_donnees_disponibles
+untitled-ontology-9:Auditer_les_sources_de_donnees_disponibles rdf:type owl:Class ;
+                                                               rdfs:subClassOf untitled-ontology-9:Donnees .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Augmenter_les_donnees
+untitled-ontology-9:Augmenter_les_donnees rdf:type owl:Class ;
+                                          rdfs:subClassOf untitled-ontology-9:Donnees .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Automatiser_les_modeles_d_IA
+untitled-ontology-9:Automatiser_les_modeles_d_IA rdf:type owl:Class ;
+                                                 rdfs:subClassOf untitled-ontology-9:Tester_et_implementer_des_modeles_analytiques_d_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Competences
+untitled-ontology-9:Competences rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Competences_techniques
+untitled-ontology-9:Competences_techniques rdf:type owl:Class ;
+                                           rdfs:subClassOf untitled-ontology-9:Competences .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Competences_transverses
+untitled-ontology-9:Competences_transverses rdf:type owl:Class ;
+                                            rdfs:subClassOf untitled-ontology-9:Competences .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Concevoir_des_modeles_analytiques_d_IA_et_de_machine_learning
+untitled-ontology-9:Concevoir_des_modeles_analytiques_d_IA_et_de_machine_learning rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf untitled-ontology-9:Modelisation .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Concevoir_et_realiser_les_infrastructures_big_data
+untitled-ontology-9:Concevoir_et_realiser_les_infrastructures_big_data rdf:type owl:Class ;
+                                                                       rdfs:subClassOf untitled-ontology-9:Architecture .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Connaitre_les_enjeux_de_conformite_et_reglementaires_de_l_IA
+untitled-ontology-9:Connaitre_les_enjeux_de_conformite_et_reglementaires_de_l_IA rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf untitled-ontology-9:Evaluer_la_faisabilite_d_un_besoin_metier .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Connaitre_les_problematiques_ethiques_de_l_IA
+untitled-ontology-9:Connaitre_les_problematiques_ethiques_de_l_IA rdf:type owl:Class ;
+                                                                  rdfs:subClassOf untitled-ontology-9:Evaluer_la_faisabilite_d_un_besoin_metier .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Donnees
+untitled-ontology-9:Donnees rdf:type owl:Class ;
+                            rdfs:subClassOf untitled-ontology-9:Competences_techniques .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#ECUE
+untitled-ontology-9:ECUE rdf:type owl:Class ;
+                         rdfs:subClassOf untitled-ontology-9:Element_d_enseignement .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Element_d_enseignement
+untitled-ontology-9:Element_d_enseignement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Evaluer_la_faisabilite_d_un_besoin_metier
+untitled-ontology-9:Evaluer_la_faisabilite_d_un_besoin_metier rdf:type owl:Class ;
+                                                              rdfs:subClassOf untitled-ontology-9:Competences_transverses .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Identifier_et_selectionner_des_algorithmes_de_base_a_utiliser_pour_la_modelisation
+untitled-ontology-9:Identifier_et_selectionner_des_algorithmes_de_base_a_utiliser_pour_la_modelisation rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf untitled-ontology-9:Concevoir_des_modeles_analytiques_d_IA_et_de_machine_learning .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Industrialisation
+untitled-ontology-9:Industrialisation rdf:type owl:Class ;
+                                      rdfs:subClassOf untitled-ontology-9:Competences_techniques .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Industrialiser_securiser_rendre_resilients_et_utilisables_les_modeles_de_datascience
+untitled-ontology-9:Industrialiser_securiser_rendre_resilients_et_utilisables_les_modeles_de_datascience rdf:type owl:Class ;
+                                                                                                         rdfs:subClassOf untitled-ontology-9:Industrialisation .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Maintenir_les_modeles_et_algorithmes_en_etat_de_fonctionnement
+untitled-ontology-9:Maintenir_les_modeles_et_algorithmes_en_etat_de_fonctionnement rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf untitled-ontology-9:Industrialisation .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Modelisation
+untitled-ontology-9:Modelisation rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-9:Competences_techniques .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Optimiser_les_modeles_de_datascience
+untitled-ontology-9:Optimiser_les_modeles_de_datascience rdf:type owl:Class ;
+                                                         rdfs:subClassOf untitled-ontology-9:Industrialisation .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Optimiser_les_traitements_des_donnees_dans_le_datalake
+untitled-ontology-9:Optimiser_les_traitements_des_donnees_dans_le_datalake rdf:type owl:Class ;
+                                                                           rdfs:subClassOf untitled-ontology-9:Architecture .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Pilotage_de_projet_IA
+untitled-ontology-9:Pilotage_de_projet_IA rdf:type owl:Class ;
+                                          rdfs:subClassOf untitled-ontology-9:Competences_transverses .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Preparer_nettoyer_et_programmer_le_recodage_des_donnees
+untitled-ontology-9:Preparer_nettoyer_et_programmer_le_recodage_des_donnees rdf:type owl:Class ;
+                                                                            rdfs:subClassOf untitled-ontology-9:Donnees .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Programmer_les_indicateurs_necessaires_au_fonctionnement_des_algorithmes
+untitled-ontology-9:Programmer_les_indicateurs_necessaires_au_fonctionnement_des_algorithmes rdf:type owl:Class ;
+                                                                                             rdfs:subClassOf untitled-ontology-9:Concevoir_des_modeles_analytiques_d_IA_et_de_machine_learning .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Prototyper_les_modeles_d_IA
+untitled-ontology-9:Prototyper_les_modeles_d_IA rdf:type owl:Class ;
+                                                rdfs:subClassOf untitled-ontology-9:Concevoir_des_modeles_analytiques_d_IA_et_de_machine_learning .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Realiser_une_analyse_exploratoire_des_donnees
+untitled-ontology-9:Realiser_une_analyse_exploratoire_des_donnees rdf:type owl:Class ;
+                                                                  rdfs:subClassOf untitled-ontology-9:Modelisation .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Restituer_aux_interlocuteurs_metiers_les_resultats_des_modeles
+untitled-ontology-9:Restituer_aux_interlocuteurs_metiers_les_resultats_des_modeles rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf untitled-ontology-9:Transferer_au_metier .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_accompagner_le_changement_induit_par_un_projet_IA
+untitled-ontology-9:Savoir_accompagner_le_changement_induit_par_un_projet_IA rdf:type owl:Class ;
+                                                                             rdfs:subClassOf untitled-ontology-9:Savoir_mettre_en_plave_la_conduite_du_changement .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_concevoir_un_plan_de_changement
+untitled-ontology-9:Savoir_concevoir_un_plan_de_changement rdf:type owl:Class ;
+                                                           rdfs:subClassOf untitled-ontology-9:Savoir_mettre_en_plave_la_conduite_du_changement .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_expliquer_les_benefices_d_un_projet_IA_aux_interlocuteurs_metier
+untitled-ontology-9:Savoir_expliquer_les_benefices_d_un_projet_IA_aux_interlocuteurs_metier rdf:type owl:Class ;
+                                                                                            rdfs:subClassOf untitled-ontology-9:Evaluer_la_faisabilite_d_un_besoin_metier .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_identifier_l_opportunite_d_un_projet_IA
+untitled-ontology-9:Savoir_identifier_l_opportunite_d_un_projet_IA rdf:type owl:Class ;
+                                                                   rdfs:subClassOf untitled-ontology-9:Evaluer_la_faisabilite_d_un_besoin_metier .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_identifier_les_enjeux_strategiques_d_evolution
+untitled-ontology-9:Savoir_identifier_les_enjeux_strategiques_d_evolution rdf:type owl:Class ;
+                                                                          rdfs:subClassOf untitled-ontology-9:Savoir_mettre_en_plave_la_conduite_du_changement .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_mettre_en_place_une_approche_sobre_de_l_IA
+untitled-ontology-9:Savoir_mettre_en_place_une_approche_sobre_de_l_IA rdf:type owl:Class ;
+                                                                      rdfs:subClassOf untitled-ontology-9:Evaluer_la_faisabilite_d_un_besoin_metier .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_mettre_en_plave_la_conduite_du_changement
+untitled-ontology-9:Savoir_mettre_en_plave_la_conduite_du_changement rdf:type owl:Class ;
+                                                                     rdfs:subClassOf untitled-ontology-9:Competences_transverses .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_utiliser_les_modeles_pre_entraines_du_domaine_public_pour_creer_un_modele_IA_generative_vision_texte_parole
+untitled-ontology-9:Savoir_utiliser_les_modeles_pre_entraines_du_domaine_public_pour_creer_un_modele_IA_generative_vision_texte_parole rdf:type owl:Class ;
+                                                                                                                                       rdfs:subClassOf untitled-ontology-9:Concevoir_des_modeles_analytiques_d_IA_et_de_machine_learning .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Specifier_et_programmer_les_traitements_des_donnees_dans_le_datalake
+untitled-ontology-9:Specifier_et_programmer_les_traitements_des_donnees_dans_le_datalake rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf untitled-ontology-9:Architecture .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Tester_et_decider_de_rejeter_adopter_les_modeles_en_mesurant_evaluer_leur_pertinence_sur_la_base_de_leur_precision_leur_robustesse_leur_absence_de_biais
+untitled-ontology-9:Tester_et_decider_de_rejeter_adopter_les_modeles_en_mesurant_evaluer_leur_pertinence_sur_la_base_de_leur_precision_leur_robustesse_leur_absence_de_biais rdf:type owl:Class ;
+                                                                                                                                                                             rdfs:subClassOf untitled-ontology-9:Tester_et_implementer_des_modeles_analytiques_d_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Tester_et_implementer_des_modeles_analytiques_d_IA
+untitled-ontology-9:Tester_et_implementer_des_modeles_analytiques_d_IA rdf:type owl:Class ;
+                                                                       rdfs:subClassOf untitled-ontology-9:Modelisation .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Transferer_au_metier
+untitled-ontology-9:Transferer_au_metier rdf:type owl:Class ;
+                                         rdfs:subClassOf untitled-ontology-9:Competences_techniques .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#UE
+untitled-ontology-9:UE rdf:type owl:Class ;
+                       rdfs:subClassOf untitled-ontology-9:Element_d_enseignement .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Algorithmique_et_complexite
+untitled-ontology-9:Algorithmique_et_complexite rdf:type owl:NamedIndividual ,
+                                                         untitled-ontology-9:UE ;
+                                                untitled-ontology-9:evalue untitled-ontology-9:Maitriser_les_methodes_d_optimisation_de_complexite_et_de_cross_validation_des_modeles .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Cas_d_etude
+untitled-ontology-9:Cas_d_etude rdf:type owl:NamedIndividual ,
+                                         untitled-ontology-9:ECUE .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Collecte_des_donnees_et_plan_d_experiences
+untitled-ontology-9:Collecte_des_donnees_et_plan_d_experiences rdf:type owl:NamedIndividual ,
+                                                                        untitled-ontology-9:ECUE .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Collecte_manipulation_et_visualisation_des_donnees
+untitled-ontology-9:Collecte_manipulation_et_visualisation_des_donnees rdf:type owl:NamedIndividual ,
+                                                                                untitled-ontology-9:UE ;
+                                                                       untitled-ontology-9:evalue untitled-ontology-9:Maitriser_la_statistique_descriptive .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Complexite_des_algorithmes_et_recursivite
+untitled-ontology-9:Complexite_des_algorithmes_et_recursivite rdf:type owl:NamedIndividual ,
+                                                                       untitled-ontology-9:ECUE .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Conception_logicielle
+untitled-ontology-9:Conception_logicielle rdf:type owl:NamedIndividual ,
+                                                   untitled-ontology-9:ECUE .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Connaitre_les_benefices_et_les_impacts_de_l_IA
+untitled-ontology-9:Connaitre_les_benefices_et_les_impacts_de_l_IA rdf:type owl:NamedIndividual ,
+                                                                            untitled-ontology-9:Savoir_expliquer_les_benefices_d_un_projet_IA_aux_interlocuteurs_metier .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Connaitre_les_differentes_formes_d_apprentissage_machine
+untitled-ontology-9:Connaitre_les_differentes_formes_d_apprentissage_machine rdf:type owl:NamedIndividual ,
+                                                                                      untitled-ontology-9:Identifier_et_selectionner_des_algorithmes_de_base_a_utiliser_pour_la_modelisation .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Connaitre_les_methodes_de_gestion_DataOps_et_DevOps
+untitled-ontology-9:Connaitre_les_methodes_de_gestion_DataOps_et_DevOps rdf:type owl:NamedIndividual ,
+                                                                                 untitled-ontology-9:Pilotage_de_projet_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Connaitre_les_principaux_algorithmes_d_IA_du_domaine_public
+untitled-ontology-9:Connaitre_les_principaux_algorithmes_d_IA_du_domaine_public rdf:type owl:NamedIndividual ,
+                                                                                         untitled-ontology-9:Identifier_et_selectionner_des_algorithmes_de_base_a_utiliser_pour_la_modelisation .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Connaitre_les_sources_de_donnees_open_source
+untitled-ontology-9:Connaitre_les_sources_de_donnees_open_source rdf:type owl:NamedIndividual ,
+                                                                          untitled-ontology-9:Augmenter_les_donnees .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Developpement_Web
+untitled-ontology-9:Developpement_Web rdf:type owl:NamedIndividual ,
+                                               untitled-ontology-9:ECUE .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Developpements_Web_et_Mobile
+untitled-ontology-9:Developpements_Web_et_Mobile rdf:type owl:NamedIndividual ,
+                                                          untitled-ontology-9:UE ;
+                                                 untitled-ontology-9:permetdAcquerir untitled-ontology-9:Etre_capable_de_produire_du_code_industrialisable_par_exemple_en_utilisant_des_notebooks_et_gerer_les_versions_de_modeles_par_exemple_avec_Git_GitHub ;
+                                                 untitled-ontology-9:prerequiert untitled-ontology-9:Conception_logicielle .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Etre_capable_d_appliquer_les_regles_du_RGPD
+untitled-ontology-9:Etre_capable_d_appliquer_les_regles_du_RGPD rdf:type owl:NamedIndividual ,
+                                                                         untitled-ontology-9:Auditer_les_sources_de_donnees_disponibles .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Etre_capable_d_assembler_la_chaine_de_traitement_des_differents_modeles
+untitled-ontology-9:Etre_capable_d_assembler_la_chaine_de_traitement_des_differents_modeles rdf:type owl:NamedIndividual ,
+                                                                                                     untitled-ontology-9:Prototyper_les_modeles_d_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Etre_capable_d_evaluer_la_faisabilite_d_un_projet
+untitled-ontology-9:Etre_capable_d_evaluer_la_faisabilite_d_un_projet rdf:type owl:NamedIndividual ,
+                                                                               untitled-ontology-9:Savoir_identifier_l_opportunite_d_un_projet_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Etre_capable_de_mettre_en_oeuvre_du_machine_learning_non_supervise
+untitled-ontology-9:Etre_capable_de_mettre_en_oeuvre_du_machine_learning_non_supervise rdf:type owl:NamedIndividual ,
+                                                                                                untitled-ontology-9:Programmer_les_indicateurs_necessaires_au_fonctionnement_des_algorithmes .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Etre_capable_de_mettre_en_oeuvre_du_machine_learning_supervise
+untitled-ontology-9:Etre_capable_de_mettre_en_oeuvre_du_machine_learning_supervise rdf:type owl:NamedIndividual ,
+                                                                                            untitled-ontology-9:Programmer_les_indicateurs_necessaires_au_fonctionnement_des_algorithmes .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Etre_capable_de_produire_du_code_industrialisable_par_exemple_en_utilisant_des_notebooks_et_gerer_les_versions_de_modeles_par_exemple_avec_Git_GitHub
+untitled-ontology-9:Etre_capable_de_produire_du_code_industrialisable_par_exemple_en_utilisant_des_notebooks_et_gerer_les_versions_de_modeles_par_exemple_avec_Git_GitHub rdf:type owl:NamedIndividual ,
+                                                                                                                                                                                   untitled-ontology-9:Optimiser_les_modeles_de_datascience .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Etre_capable_de_reconnaitre_le_caractere_ethique_ou_non_ethique_des_donnees
+untitled-ontology-9:Etre_capable_de_reconnaitre_le_caractere_ethique_ou_non_ethique_des_donnees rdf:type owl:NamedIndividual ,
+                                                                                                         untitled-ontology-9:Auditer_les_sources_de_donnees_disponibles .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Informatique_mobile
+untitled-ontology-9:Informatique_mobile rdf:type owl:NamedIndividual ,
+                                                 untitled-ontology-9:ECUE .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Ingenierie_logicielle
+untitled-ontology-9:Ingenierie_logicielle rdf:type owl:NamedIndividual ,
+                                                   untitled-ontology-9:UE ;
+                                          untitled-ontology-9:permetdAcquerir untitled-ontology-9:Savoir_construire_le_workflow_graphique_d_un_modele .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Introduction_a_l_IA_symbolique
+untitled-ontology-9:Introduction_a_l_IA_symbolique rdf:type owl:NamedIndividual ,
+                                                            untitled-ontology-9:ECUE .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Introduction_a_l_apprentissage_automatique
+untitled-ontology-9:Introduction_a_l_apprentissage_automatique rdf:type owl:NamedIndividual ,
+                                                                        untitled-ontology-9:ECUE .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Introduction_a_l_informatique_theorique
+untitled-ontology-9:Introduction_a_l_informatique_theorique rdf:type owl:NamedIndividual ,
+                                                                     untitled-ontology-9:ECUE .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Introduction_a_l_intelligence_artificielle
+untitled-ontology-9:Introduction_a_l_intelligence_artificielle rdf:type owl:NamedIndividual ,
+                                                                        untitled-ontology-9:UE ;
+                                                               untitled-ontology-9:evalue untitled-ontology-9:Connaitre_les_differentes_formes_d_apprentissage_machine ;
+                                                               untitled-ontology-9:permetdAcquerir untitled-ontology-9:Savoir_entrainer_les_algorithmes_d_apprentissage .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Maitriser_l_analyse_statistique_des_correlations
+untitled-ontology-9:Maitriser_l_analyse_statistique_des_correlations rdf:type owl:NamedIndividual ,
+                                                                              untitled-ontology-9:Realiser_une_analyse_exploratoire_des_donnees .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Maitriser_la_methode_devops_en_lien_avec_la_methode_MLOps_dataops
+untitled-ontology-9:Maitriser_la_methode_devops_en_lien_avec_la_methode_MLOps_dataops rdf:type owl:NamedIndividual ,
+                                                                                               untitled-ontology-9:Industrialiser_securiser_rendre_resilients_et_utilisables_les_modeles_de_datascience .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Maitriser_la_statistique_descriptive
+untitled-ontology-9:Maitriser_la_statistique_descriptive rdf:type owl:NamedIndividual ,
+                                                                  untitled-ontology-9:Auditer_la_qualite_des_donnees .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Maitriser_le_fonctionnement_d_une_infrastructure_cloud_majeure
+untitled-ontology-9:Maitriser_le_fonctionnement_d_une_infrastructure_cloud_majeure rdf:type owl:NamedIndividual ,
+                                                                                            untitled-ontology-9:Concevoir_et_realiser_les_infrastructures_big_data .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Maitriser_le_fonctionnement_de_lecosysteme_Hadoop
+untitled-ontology-9:Maitriser_le_fonctionnement_de_lecosysteme_Hadoop rdf:type owl:NamedIndividual ,
+                                                                               untitled-ontology-9:Concevoir_et_realiser_les_infrastructures_big_data .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Maitriser_le_fonctionnement_de_lecosysteme_Spark
+untitled-ontology-9:Maitriser_le_fonctionnement_de_lecosysteme_Spark rdf:type owl:NamedIndividual ,
+                                                                              untitled-ontology-9:Concevoir_et_realiser_les_infrastructures_big_data .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Maitriser_le_fonctionnement_des_bases_de_donnees_NoSql
+untitled-ontology-9:Maitriser_le_fonctionnement_des_bases_de_donnees_NoSql rdf:type owl:NamedIndividual ,
+                                                                                    untitled-ontology-9:Concevoir_et_realiser_les_infrastructures_big_data .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Maitriser_le_fonctionnement_des_bases_de_donnees_SQL
+untitled-ontology-9:Maitriser_le_fonctionnement_des_bases_de_donnees_SQL rdf:type owl:NamedIndividual ,
+                                                                                  untitled-ontology-9:Preparer_nettoyer_et_programmer_le_recodage_des_donnees .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Maitriser_les_differentes_methodes_de_test_d_hypotheses
+untitled-ontology-9:Maitriser_les_differentes_methodes_de_test_d_hypotheses rdf:type owl:NamedIndividual ,
+                                                                                     untitled-ontology-9:Realiser_une_analyse_exploratoire_des_donnees .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Maitriser_les_methodes_d_optimisation_de_complexite_et_de_cross_validation_des_modeles
+untitled-ontology-9:Maitriser_les_methodes_d_optimisation_de_complexite_et_de_cross_validation_des_modeles rdf:type owl:NamedIndividual ,
+                                                                                                                    untitled-ontology-9:Tester_et_decider_de_rejeter_adopter_les_modeles_en_mesurant_evaluer_leur_pertinence_sur_la_base_de_leur_precision_leur_robustesse_leur_absence_de_biais .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Maitriser_les_methodes_statistiques_de_monitoring_des_modeles_de_Machine_Learning
+untitled-ontology-9:Maitriser_les_methodes_statistiques_de_monitoring_des_modeles_de_Machine_Learning rdf:type owl:NamedIndividual ,
+                                                                                                               untitled-ontology-9:Maintenir_les_modeles_et_algorithmes_en_etat_de_fonctionnement .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Maitriser_les_principales_methodes_de_clustering_et_de_typologies_non_supervisees
+untitled-ontology-9:Maitriser_les_principales_methodes_de_clustering_et_de_typologies_non_supervisees rdf:type owl:NamedIndividual ,
+                                                                                                               untitled-ontology-9:Realiser_une_analyse_exploratoire_des_donnees .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Maitriser_les_principales_methodes_de_reduction_de_dimension_non_supervisees
+untitled-ontology-9:Maitriser_les_principales_methodes_de_reduction_de_dimension_non_supervisees rdf:type owl:NamedIndividual ,
+                                                                                                          untitled-ontology-9:Realiser_une_analyse_exploratoire_des_donnees .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Mettre_en_oeuvre_la_mesure_de_la_performance_des_traitements_sur_linfrastructure_cible
+untitled-ontology-9:Mettre_en_oeuvre_la_mesure_de_la_performance_des_traitements_sur_linfrastructure_cible rdf:type owl:NamedIndividual ,
+                                                                                                                    untitled-ontology-9:Optimiser_les_traitements_des_donnees_dans_le_datalake .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Panorama_de_l_IA_definitions_enjeux_et_challenges
+untitled-ontology-9:Panorama_de_l_IA_definitions_enjeux_et_challenges rdf:type owl:NamedIndividual ,
+                                                                               untitled-ontology-9:ECUE .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Pouvoir_creer_des_jeux_de_donnees_de_test
+untitled-ontology-9:Pouvoir_creer_des_jeux_de_donnees_de_test rdf:type owl:NamedIndividual ,
+                                                                       untitled-ontology-9:Preparer_nettoyer_et_programmer_le_recodage_des_donnees .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Pouvoir_identifier_et_gerer_les_donnees_manquantes
+untitled-ontology-9:Pouvoir_identifier_et_gerer_les_donnees_manquantes rdf:type owl:NamedIndividual ,
+                                                                                untitled-ontology-9:Auditer_les_sources_de_donnees_disponibles .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Pouvoir_identifier_les_donnees_atypiques_et_ou_aberrantes
+untitled-ontology-9:Pouvoir_identifier_les_donnees_atypiques_et_ou_aberrantes rdf:type owl:NamedIndividual ,
+                                                                                       untitled-ontology-9:Auditer_les_sources_de_donnees_disponibles .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Pouvoir_identifier_les_goulots_detranglement_et_les_traitements_critiques
+untitled-ontology-9:Pouvoir_identifier_les_goulots_detranglement_et_les_traitements_critiques rdf:type owl:NamedIndividual ,
+                                                                                                       untitled-ontology-9:Optimiser_les_traitements_des_donnees_dans_le_datalake .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Programation_C
+untitled-ontology-9:Programation_C rdf:type owl:NamedIndividual ,
+                                            untitled-ontology-9:ECUE .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_accompagner_les_equipes_metiers
+untitled-ontology-9:Savoir_accompagner_les_equipes_metiers rdf:type owl:NamedIndividual ,
+                                                                    untitled-ontology-9:Pilotage_de_projet_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_automatiser_l_optimisation_des_hyper_parametres
+untitled-ontology-9:Savoir_automatiser_l_optimisation_des_hyper_parametres rdf:type owl:NamedIndividual ,
+                                                                                    untitled-ontology-9:Automatiser_les_modeles_d_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_calculer_et_mesurer_la_variance_des_residus_d_un_modele_quantitatif
+untitled-ontology-9:Savoir_calculer_et_mesurer_la_variance_des_residus_d_un_modele_quantitatif rdf:type owl:NamedIndividual ,
+                                                                                                        untitled-ontology-9:Tester_et_decider_de_rejeter_adopter_les_modeles_en_mesurant_evaluer_leur_pertinence_sur_la_base_de_leur_precision_leur_robustesse_leur_absence_de_biais .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_choisir_les_hyper_parametres_pour_faciliter_l_automatisation
+untitled-ontology-9:Savoir_choisir_les_hyper_parametres_pour_faciliter_l_automatisation rdf:type owl:NamedIndividual ,
+                                                                                                 untitled-ontology-9:Automatiser_les_modeles_d_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_configurer_les_seuils_d_alertes_en_cas_de_dysfonctionnement_des_modeles
+untitled-ontology-9:Savoir_configurer_les_seuils_d_alertes_en_cas_de_dysfonctionnement_des_modeles rdf:type owl:NamedIndividual ,
+                                                                                                            untitled-ontology-9:Maintenir_les_modeles_et_algorithmes_en_etat_de_fonctionnement .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_construire_le_workflow_graphique_d_un_modele
+untitled-ontology-9:Savoir_construire_le_workflow_graphique_d_un_modele rdf:type owl:NamedIndividual ,
+                                                                                 untitled-ontology-9:Optimiser_les_modeles_de_datascience .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_creer_les_indicateurs_pour_valider_ou_rejeter_les_modeles_testes
+untitled-ontology-9:Savoir_creer_les_indicateurs_pour_valider_ou_rejeter_les_modeles_testes rdf:type owl:NamedIndividual ,
+                                                                                                     untitled-ontology-9:Tester_et_decider_de_rejeter_adopter_les_modeles_en_mesurant_evaluer_leur_pertinence_sur_la_base_de_leur_precision_leur_robustesse_leur_absence_de_biais .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_creer_un_jeu_de_donnees_pertinent_pour_la_cross_validation
+untitled-ontology-9:Savoir_creer_un_jeu_de_donnees_pertinent_pour_la_cross_validation rdf:type owl:NamedIndividual ,
+                                                                                               untitled-ontology-9:Realiser_une_analyse_exploratoire_des_donnees .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_developper_un_modele_d_IA_symbolique
+untitled-ontology-9:Savoir_developper_un_modele_d_IA_symbolique rdf:type owl:NamedIndividual ,
+                                                                         untitled-ontology-9:Savoir_utiliser_les_modeles_pre_entraines_du_domaine_public_pour_creer_un_modele_IA_generative_vision_texte_parole .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_developper_un_modele_multiagent
+untitled-ontology-9:Savoir_developper_un_modele_multiagent rdf:type owl:NamedIndividual ,
+                                                                    untitled-ontology-9:Savoir_utiliser_les_modeles_pre_entraines_du_domaine_public_pour_creer_un_modele_IA_generative_vision_texte_parole .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_documenter_les_modeles_avec_Jupyter_Notebook
+untitled-ontology-9:Savoir_documenter_les_modeles_avec_Jupyter_Notebook rdf:type owl:NamedIndividual ,
+                                                                                 untitled-ontology-9:Prototyper_les_modeles_d_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_documenter_les_modeles_par_exemple_avec_Jupyter_Notebook
+untitled-ontology-9:Savoir_documenter_les_modeles_par_exemple_avec_Jupyter_Notebook rdf:type owl:NamedIndividual ,
+                                                                                             untitled-ontology-9:Optimiser_les_modeles_de_datascience .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_elaborer_des_plans_de_formation_pour_accompagner_le_changement
+untitled-ontology-9:Savoir_elaborer_des_plans_de_formation_pour_accompagner_le_changement rdf:type owl:NamedIndividual ,
+                                                                                                   untitled-ontology-9:Savoir_accompagner_le_changement_induit_par_un_projet_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_elaborer_une_strategie_de_communication_aupres_des_acteurs_du_projet_IA
+untitled-ontology-9:Savoir_elaborer_une_strategie_de_communication_aupres_des_acteurs_du_projet_IA rdf:type owl:NamedIndividual ,
+                                                                                                            untitled-ontology-9:Savoir_accompagner_le_changement_induit_par_un_projet_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_encadrer_une_equipe_projet_IA
+untitled-ontology-9:Savoir_encadrer_une_equipe_projet_IA rdf:type owl:NamedIndividual ,
+                                                                  untitled-ontology-9:Pilotage_de_projet_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_entrainer_les_algorithmes_d_apprentissage
+untitled-ontology-9:Savoir_entrainer_les_algorithmes_d_apprentissage rdf:type owl:NamedIndividual ,
+                                                                              untitled-ontology-9:Identifier_et_selectionner_des_algorithmes_de_base_a_utiliser_pour_la_modelisation .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_evaluer_et_mettre_en_place_des_best_practices_d_utilisation_frugale_de_l_IA
+untitled-ontology-9:Savoir_evaluer_et_mettre_en_place_des_best_practices_d_utilisation_frugale_de_l_IA rdf:type owl:NamedIndividual ,
+                                                                                                                untitled-ontology-9:Savoir_mettre_en_place_une_approche_sobre_de_l_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_evaluer_la_complexite_d_une_problematique_IA
+untitled-ontology-9:Savoir_evaluer_la_complexite_d_une_problematique_IA rdf:type owl:NamedIndividual ,
+                                                                                 untitled-ontology-9:Savoir_identifier_l_opportunite_d_un_projet_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_evaluer_les_impacts_d_un_projet_IA_au_vu_de_la_reglementation
+untitled-ontology-9:Savoir_evaluer_les_impacts_d_un_projet_IA_au_vu_de_la_reglementation rdf:type owl:NamedIndividual ,
+                                                                                                  untitled-ontology-9:Connaitre_les_enjeux_de_conformite_et_reglementaires_de_l_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_eviter_un_biais_dans_les_donnees_d_apprentissage
+untitled-ontology-9:Savoir_eviter_un_biais_dans_les_donnees_d_apprentissage rdf:type owl:NamedIndividual ,
+                                                                                     untitled-ontology-9:Realiser_une_analyse_exploratoire_des_donnees .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_expliquer_les_problematiques_typiques_en_IA
+untitled-ontology-9:Savoir_expliquer_les_problematiques_typiques_en_IA rdf:type owl:NamedIndividual ,
+                                                                                untitled-ontology-9:Savoir_identifier_l_opportunite_d_un_projet_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_expliquer_les_risques_des_modeles
+untitled-ontology-9:Savoir_expliquer_les_risques_des_modeles rdf:type owl:NamedIndividual ,
+                                                                      untitled-ontology-9:Transferer_au_metier .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_exploiter_les_resultats_d_une_strategie_inferentielle_de_cross_validation
+untitled-ontology-9:Savoir_exploiter_les_resultats_d_une_strategie_inferentielle_de_cross_validation rdf:type owl:NamedIndividual ,
+                                                                                                              untitled-ontology-9:Tester_et_decider_de_rejeter_adopter_les_modeles_en_mesurant_evaluer_leur_pertinence_sur_la_base_de_leur_precision_leur_robustesse_leur_absence_de_biais .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_garantir_le_respect_du_calendrier
+untitled-ontology-9:Savoir_garantir_le_respect_du_calendrier rdf:type owl:NamedIndividual ,
+                                                                      untitled-ontology-9:Pilotage_de_projet_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_generer_de_nouvelles_variables_feature_engineering
+untitled-ontology-9:Savoir_generer_de_nouvelles_variables_feature_engineering rdf:type owl:NamedIndividual ,
+                                                                                       untitled-ontology-9:Augmenter_les_donnees .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_identifier_la_bonne_infrastructure_et_les_differents_types_dinfrastructure
+untitled-ontology-9:Savoir_identifier_la_bonne_infrastructure_et_les_differents_types_dinfrastructure rdf:type owl:NamedIndividual ,
+                                                                                                               untitled-ontology-9:Concevoir_et_realiser_les_infrastructures_big_data .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_identifier_le_contexte__les_enjeux__les_objectifs_et_les_contraintes_de_l_entreprise
+untitled-ontology-9:Savoir_identifier_le_contexte__les_enjeux__les_objectifs_et_les_contraintes_de_l_entreprise rdf:type owl:NamedIndividual ,
+                                                                                                                         untitled-ontology-9:Savoir_identifier_les_enjeux_strategiques_d_evolution .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_identifier_les_actions_a_mener_pour_optimiser_les_process_internes__suite_au_projet_IA
+untitled-ontology-9:Savoir_identifier_les_actions_a_mener_pour_optimiser_les_process_internes__suite_au_projet_IA rdf:type owl:NamedIndividual ,
+                                                                                                                           untitled-ontology-9:Savoir_concevoir_un_plan_de_changement .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_identifier_les_algorithmes_utilisables
+untitled-ontology-9:Savoir_identifier_les_algorithmes_utilisables rdf:type owl:NamedIndividual ,
+                                                                           untitled-ontology-9:Savoir_identifier_l_opportunite_d_un_projet_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_identifier_les_derives_des_modeles
+untitled-ontology-9:Savoir_identifier_les_derives_des_modeles rdf:type owl:NamedIndividual ,
+                                                                       untitled-ontology-9:Maintenir_les_modeles_et_algorithmes_en_etat_de_fonctionnement .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_identifier_les_differents_process_metier_potentiellement_impactes_par_l_IA
+untitled-ontology-9:Savoir_identifier_les_differents_process_metier_potentiellement_impactes_par_l_IA rdf:type owl:NamedIndividual ,
+                                                                                                               untitled-ontology-9:Savoir_identifier_les_enjeux_strategiques_d_evolution .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_identifier_les_parties_prenantes__MOA__MOE__et_les_canaux_de_communication
+untitled-ontology-9:Savoir_identifier_les_parties_prenantes__MOA__MOE__et_les_canaux_de_communication rdf:type owl:NamedIndividual ,
+                                                                                                               untitled-ontology-9:Savoir_concevoir_un_plan_de_changement .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_illustrer_les_resultats_du_modele_par_des_graphiques_comprehensibles_par_les_metiers
+untitled-ontology-9:Savoir_illustrer_les_resultats_du_modele_par_des_graphiques_comprehensibles_par_les_metiers rdf:type owl:NamedIndividual ,
+                                                                                                                         untitled-ontology-9:Transferer_au_metier .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_implementer_des_pistes_d_auditabilite_et_de_traceabilite
+untitled-ontology-9:Savoir_implementer_des_pistes_d_auditabilite_et_de_traceabilite rdf:type owl:NamedIndividual ,
+                                                                                             untitled-ontology-9:Prototyper_les_modeles_d_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_impliquer_les_directions_metiers
+untitled-ontology-9:Savoir_impliquer_les_directions_metiers rdf:type owl:NamedIndividual ,
+                                                                     untitled-ontology-9:Savoir_accompagner_le_changement_induit_par_un_projet_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_integrer_les_resultats_dans_les_applications_digitales_de_l_entreprise
+untitled-ontology-9:Savoir_integrer_les_resultats_dans_les_applications_digitales_de_l_entreprise rdf:type owl:NamedIndividual ,
+                                                                                                           untitled-ontology-9:Industrialiser_securiser_rendre_resilients_et_utilisables_les_modeles_de_datascience .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_integrer_une_demarche_ethique_dans_les_projets_IA
+untitled-ontology-9:Savoir_integrer_une_demarche_ethique_dans_les_projets_IA rdf:type owl:NamedIndividual ,
+                                                                                      untitled-ontology-9:Connaitre_les_problematiques_ethiques_de_l_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_interpreter_les_resultats_des_differents_modeles_et_en_expliquer_les_resultats
+untitled-ontology-9:Savoir_interpreter_les_resultats_des_differents_modeles_et_en_expliquer_les_resultats rdf:type owl:NamedIndividual ,
+                                                                                                                   untitled-ontology-9:Transferer_au_metier .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_mesurer_la_performance_des_modeles
+untitled-ontology-9:Savoir_mesurer_la_performance_des_modeles rdf:type owl:NamedIndividual ,
+                                                                       untitled-ontology-9:Tester_et_decider_de_rejeter_adopter_les_modeles_en_mesurant_evaluer_leur_pertinence_sur_la_base_de_leur_precision_leur_robustesse_leur_absence_de_biais .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_mesurer_la_robustesse_statistique_des_modeles
+untitled-ontology-9:Savoir_mesurer_la_robustesse_statistique_des_modeles rdf:type owl:NamedIndividual ,
+                                                                                  untitled-ontology-9:Tester_et_decider_de_rejeter_adopter_les_modeles_en_mesurant_evaluer_leur_pertinence_sur_la_base_de_leur_precision_leur_robustesse_leur_absence_de_biais .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_mesurer_les_depenses_energetiques_de_l_IA
+untitled-ontology-9:Savoir_mesurer_les_depenses_energetiques_de_l_IA rdf:type owl:NamedIndividual ,
+                                                                              untitled-ontology-9:Savoir_mettre_en_place_une_approche_sobre_de_l_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_mesurer_les_ecarts_non_conformites_et_les_communiquer
+untitled-ontology-9:Savoir_mesurer_les_ecarts_non_conformites_et_les_communiquer rdf:type owl:NamedIndividual ,
+                                                                                          untitled-ontology-9:Transferer_au_metier .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_mesurer_les_impacts_des_resultats
+untitled-ontology-9:Savoir_mesurer_les_impacts_des_resultats rdf:type owl:NamedIndividual ,
+                                                                      untitled-ontology-9:Transferer_au_metier .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_mettre_en_oeuvre_des_procedures_de_mesure_et_controle_des_impacts
+untitled-ontology-9:Savoir_mettre_en_oeuvre_des_procedures_de_mesure_et_controle_des_impacts rdf:type owl:NamedIndividual ,
+                                                                                                      untitled-ontology-9:Connaitre_les_problematiques_ethiques_de_l_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_mettre_en_oeuvre_une_approche_ethique_pour_mesurer_l_impact_des_changements
+untitled-ontology-9:Savoir_mettre_en_oeuvre_une_approche_ethique_pour_mesurer_l_impact_des_changements rdf:type owl:NamedIndividual ,
+                                                                                                                untitled-ontology-9:Savoir_identifier_les_enjeux_strategiques_d_evolution .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_mettre_en_place_des_procedures_de_protection_des_donnees_personnelles
+untitled-ontology-9:Savoir_mettre_en_place_des_procedures_de_protection_des_donnees_personnelles rdf:type owl:NamedIndividual ,
+                                                                                                          untitled-ontology-9:Connaitre_les_problematiques_ethiques_de_l_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_mettre_en_place_le_RGPD
+untitled-ontology-9:Savoir_mettre_en_place_le_RGPD rdf:type owl:NamedIndividual ,
+                                                            untitled-ontology-9:Connaitre_les_enjeux_de_conformite_et_reglementaires_de_l_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_mettre_en_place_une_gouvernance_de_controle_des_risques
+untitled-ontology-9:Savoir_mettre_en_place_une_gouvernance_de_controle_des_risques rdf:type owl:NamedIndividual ,
+                                                                                            untitled-ontology-9:Appliquer_les_bonnes_pratiques_pour_gerer_les_risques_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_mettre_en_place_une_methodologie_de_mesure_des_risques
+untitled-ontology-9:Savoir_mettre_en_place_une_methodologie_de_mesure_des_risques rdf:type owl:NamedIndividual ,
+                                                                                           untitled-ontology-9:Appliquer_les_bonnes_pratiques_pour_gerer_les_risques_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_mettre_en_place_une_veille_sur_l_ethique_de_l_IA
+untitled-ontology-9:Savoir_mettre_en_place_une_veille_sur_l_ethique_de_l_IA rdf:type owl:NamedIndividual ,
+                                                                                     untitled-ontology-9:Connaitre_les_problematiques_ethiques_de_l_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_mettre_en_place_une_veille_sur_la_reglementation_de_l_IA
+untitled-ontology-9:Savoir_mettre_en_place_une_veille_sur_la_reglementation_de_l_IA rdf:type owl:NamedIndividual ,
+                                                                                             untitled-ontology-9:Connaitre_les_enjeux_de_conformite_et_reglementaires_de_l_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_mettre_en_uvre_une_strategie_d_inference
+untitled-ontology-9:Savoir_mettre_en_uvre_une_strategie_d_inference rdf:type owl:NamedIndividual ,
+                                                                             untitled-ontology-9:Programmer_les_indicateurs_necessaires_au_fonctionnement_des_algorithmes .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_optimiser_le_compromis_explicabilite_traceabilite_precision_des_algorithmes
+untitled-ontology-9:Savoir_optimiser_le_compromis_explicabilite_traceabilite_precision_des_algorithmes rdf:type owl:NamedIndividual ,
+                                                                                                                untitled-ontology-9:Prototyper_les_modeles_d_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_orchestrer_un_ensemble_d_algorithmes
+untitled-ontology-9:Savoir_orchestrer_un_ensemble_d_algorithmes rdf:type owl:NamedIndividual ,
+                                                                         untitled-ontology-9:Industrialiser_securiser_rendre_resilients_et_utilisables_les_modeles_de_datascience .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_paralleliser_les_traitements_sur_infrastructure_Spark
+untitled-ontology-9:Savoir_paralleliser_les_traitements_sur_infrastructure_Spark rdf:type owl:NamedIndividual ,
+                                                                                          untitled-ontology-9:Optimiser_les_traitements_des_donnees_dans_le_datalake .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_presenter_des_visualisations_des_donnees_comprehensibles_par_les_metiers
+untitled-ontology-9:Savoir_presenter_des_visualisations_des_donnees_comprehensibles_par_les_metiers rdf:type owl:NamedIndividual ,
+                                                                                                             untitled-ontology-9:Transferer_au_metier .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_presenter_les_biais_des_modeles
+untitled-ontology-9:Savoir_presenter_les_biais_des_modeles rdf:type owl:NamedIndividual ,
+                                                                    untitled-ontology-9:Transferer_au_metier .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_produire_la_matrice_de_confusion_d_un_modele_de_classification
+untitled-ontology-9:Savoir_produire_la_matrice_de_confusion_d_un_modele_de_classification rdf:type owl:NamedIndividual ,
+                                                                                                   untitled-ontology-9:Tester_et_decider_de_rejeter_adopter_les_modeles_en_mesurant_evaluer_leur_pertinence_sur_la_base_de_leur_precision_leur_robustesse_leur_absence_de_biais .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_produire_le_plan_de_changement
+untitled-ontology-9:Savoir_produire_le_plan_de_changement rdf:type owl:NamedIndividual ,
+                                                                   untitled-ontology-9:Savoir_concevoir_un_plan_de_changement .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_produire_une_etude_de_cadrage_pour_accompagner_le_changement_par_des_projets_IA
+untitled-ontology-9:Savoir_produire_une_etude_de_cadrage_pour_accompagner_le_changement_par_des_projets_IA rdf:type owl:NamedIndividual ,
+                                                                                                                    untitled-ontology-9:Savoir_identifier_les_enjeux_strategiques_d_evolution .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_programmer_avec_Hive
+untitled-ontology-9:Savoir_programmer_avec_Hive rdf:type owl:NamedIndividual ,
+                                                         untitled-ontology-9:Specifier_et_programmer_les_traitements_des_donnees_dans_le_datalake .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_programmer_en_Java
+untitled-ontology-9:Savoir_programmer_en_Java rdf:type owl:NamedIndividual ,
+                                                       untitled-ontology-9:Specifier_et_programmer_les_traitements_des_donnees_dans_le_datalake .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_programmer_en_PySpark_avec_Spark_ML
+untitled-ontology-9:Savoir_programmer_en_PySpark_avec_Spark_ML rdf:type owl:NamedIndividual ,
+                                                                        untitled-ontology-9:Optimiser_les_traitements_des_donnees_dans_le_datalake .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_programmer_en_Scala
+untitled-ontology-9:Savoir_programmer_en_Scala rdf:type owl:NamedIndividual ,
+                                                        untitled-ontology-9:Specifier_et_programmer_les_traitements_des_donnees_dans_le_datalake .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_programmer_en_Scala_avec_Spark_ML
+untitled-ontology-9:Savoir_programmer_en_Scala_avec_Spark_ML rdf:type owl:NamedIndividual ,
+                                                                      untitled-ontology-9:Optimiser_les_traitements_des_donnees_dans_le_datalake .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_programmer_le_recodage_des_donnees
+untitled-ontology-9:Savoir_programmer_le_recodage_des_donnees rdf:type owl:NamedIndividual ,
+                                                                       untitled-ontology-9:Preparer_nettoyer_et_programmer_le_recodage_des_donnees .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_programmer_les_indicateurs_necessaires
+untitled-ontology-9:Savoir_programmer_les_indicateurs_necessaires rdf:type owl:NamedIndividual ,
+                                                                           untitled-ontology-9:Programmer_les_indicateurs_necessaires_au_fonctionnement_des_algorithmes .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_proposer_des_algorithmes_IA_plus_frugaux
+untitled-ontology-9:Savoir_proposer_des_algorithmes_IA_plus_frugaux rdf:type owl:NamedIndividual ,
+                                                                             untitled-ontology-9:Savoir_mettre_en_place_une_approche_sobre_de_l_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_realiser_un_audit_de_qualite_de_donnees
+untitled-ontology-9:Savoir_realiser_un_audit_de_qualite_de_donnees rdf:type owl:NamedIndividual ,
+                                                                            untitled-ontology-9:Auditer_la_qualite_des_donnees .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_realiser_un_plan_projet
+untitled-ontology-9:Savoir_realiser_un_plan_projet rdf:type owl:NamedIndividual ,
+                                                            untitled-ontology-9:Pilotage_de_projet_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_s_assurer_de_l_absence_de_biais_dans_les_resultats_du_modele
+untitled-ontology-9:Savoir_s_assurer_de_l_absence_de_biais_dans_les_resultats_du_modele rdf:type owl:NamedIndividual ,
+                                                                                                 untitled-ontology-9:Tester_et_decider_de_rejeter_adopter_les_modeles_en_mesurant_evaluer_leur_pertinence_sur_la_base_de_leur_precision_leur_robustesse_leur_absence_de_biais .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_s_assurer_du_respect_des_hypotheses_de_fonctionnement_des_modeles
+untitled-ontology-9:Savoir_s_assurer_du_respect_des_hypotheses_de_fonctionnement_des_modeles rdf:type owl:NamedIndividual ,
+                                                                                                      untitled-ontology-9:Tester_et_decider_de_rejeter_adopter_les_modeles_en_mesurant_evaluer_leur_pertinence_sur_la_base_de_leur_precision_leur_robustesse_leur_absence_de_biais .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_scenariser_des_implementations_possibles_de_cas_relevant_de_l_IA
+untitled-ontology-9:Savoir_scenariser_des_implementations_possibles_de_cas_relevant_de_l_IA rdf:type owl:NamedIndividual ,
+                                                                                                     untitled-ontology-9:Savoir_expliquer_les_benefices_d_un_projet_IA_aux_interlocuteurs_metier .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_selectionner_les_observations_illustrant_le_comportement_typique_des_modeles
+untitled-ontology-9:Savoir_selectionner_les_observations_illustrant_le_comportement_typique_des_modeles rdf:type owl:NamedIndividual ,
+                                                                                                                 untitled-ontology-9:Transferer_au_metier .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_specifier_les_conditions_d_utilisation_des_modeles_d_IA
+untitled-ontology-9:Savoir_specifier_les_conditions_d_utilisation_des_modeles_d_IA rdf:type owl:NamedIndividual ,
+                                                                                            untitled-ontology-9:Industrialiser_securiser_rendre_resilients_et_utilisables_les_modeles_de_datascience .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_traduire_les_besoins_en_termes_de_transfert_de_competences
+untitled-ontology-9:Savoir_traduire_les_besoins_en_termes_de_transfert_de_competences rdf:type owl:NamedIndividual ,
+                                                                                               untitled-ontology-9:Savoir_accompagner_le_changement_induit_par_un_projet_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_traiter_les_valeurs_aberrantes
+untitled-ontology-9:Savoir_traiter_les_valeurs_aberrantes rdf:type owl:NamedIndividual ,
+                                                                   untitled-ontology-9:Preparer_nettoyer_et_programmer_le_recodage_des_donnees .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_traiter_les_valeurs_manquantes
+untitled-ontology-9:Savoir_traiter_les_valeurs_manquantes rdf:type owl:NamedIndividual ,
+                                                                   untitled-ontology-9:Preparer_nettoyer_et_programmer_le_recodage_des_donnees .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_utiliser_des_modeles_explicatifs_pour_pouvoir_rendre_tracables_expliquables_les_modeles
+untitled-ontology-9:Savoir_utiliser_des_modeles_explicatifs_pour_pouvoir_rendre_tracables_expliquables_les_modeles rdf:type owl:NamedIndividual ,
+                                                                                                                            untitled-ontology-9:Transferer_au_metier .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_utiliser_la_librairie_Numpy_en_langage_Python
+untitled-ontology-9:Savoir_utiliser_la_librairie_Numpy_en_langage_Python rdf:type owl:NamedIndividual ,
+                                                                                  untitled-ontology-9:Auditer_la_qualite_des_donnees .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_utiliser_la_librairie_Pandas_en_langage_Python
+untitled-ontology-9:Savoir_utiliser_la_librairie_Pandas_en_langage_Python rdf:type owl:NamedIndividual ,
+                                                                                   untitled-ontology-9:Auditer_la_qualite_des_donnees .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_utiliser_la_methode_MLOps_pour_mener_a_bien_un_projet
+untitled-ontology-9:Savoir_utiliser_la_methode_MLOps_pour_mener_a_bien_un_projet rdf:type owl:NamedIndividual ,
+                                                                                          untitled-ontology-9:Programmer_les_indicateurs_necessaires_au_fonctionnement_des_algorithmes .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_utiliser_le_logiciel_Kafka
+untitled-ontology-9:Savoir_utiliser_le_logiciel_Kafka rdf:type owl:NamedIndividual ,
+                                                               untitled-ontology-9:Specifier_et_programmer_les_traitements_des_donnees_dans_le_datalake .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_utiliser_les_algorithmes_du_domaine_public_pour_creer_un_modele
+untitled-ontology-9:Savoir_utiliser_les_algorithmes_du_domaine_public_pour_creer_un_modele rdf:type owl:NamedIndividual ,
+                                                                                                    untitled-ontology-9:Identifier_et_selectionner_des_algorithmes_de_base_a_utiliser_pour_la_modelisation .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_utiliser_les_methodes_agiles
+untitled-ontology-9:Savoir_utiliser_les_methodes_agiles rdf:type owl:NamedIndividual ,
+                                                                 untitled-ontology-9:Pilotage_de_projet_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_utiliser_les_principales_librairies_d_IA_en_Python
+untitled-ontology-9:Savoir_utiliser_les_principales_librairies_d_IA_en_Python rdf:type owl:NamedIndividual ,
+                                                                                       untitled-ontology-9:Prototyper_les_modeles_d_IA .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_utiliser_un_modele_generatif_GAN
+untitled-ontology-9:Savoir_utiliser_un_modele_generatif_GAN rdf:type owl:NamedIndividual ,
+                                                                     untitled-ontology-9:Augmenter_les_donnees .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Savoir_utiliser_un_simulateur_jumeau_numerique
+untitled-ontology-9:Savoir_utiliser_un_simulateur_jumeau_numerique rdf:type owl:NamedIndividual ,
+                                                                            untitled-ontology-9:Augmenter_les_donnees .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Specifications_formelles
+untitled-ontology-9:Specifications_formelles rdf:type owl:NamedIndividual ,
+                                                      untitled-ontology-9:ECUE .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Validation_visualisation_restitution_des_donnees
+untitled-ontology-9:Validation_visualisation_restitution_des_donnees rdf:type owl:NamedIndividual ,
+                                                                              untitled-ontology-9:ECUE .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Etre_capable_d'identifier_les_sujets_relevants_de_l_IA
+<http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Etre_capable_d'identifier_les_sujets_relevants_de_l_IA> rdf:type owl:NamedIndividual ,
+                                                                                                                                         untitled-ontology-9:Savoir_expliquer_les_benefices_d_un_projet_IA_aux_interlocuteurs_metier .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,619 @@
+@prefix : <http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/> .
+
+<http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15> rdf:type owl:Ontology ;
+                                                                                 owl:imports <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9> ,
+                                                                                             <http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#duree_en_heures
+<http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#duree_en_heures> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/aPourProfession
+:aPourProfession rdf:type owl:ObjectProperty ;
+                 rdfs:domain [ rdf:type owl:Class ;
+                               owl:unionOf ( :Expert
+                                             :Professionnel
+                                           )
+                             ] ;
+                 rdfs:range :Metier .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/contientECUE
+:contientECUE rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/contientUE
+:contientUE rdf:type owl:ObjectProperty ;
+            rdfs:domain :Formation ;
+            rdfs:range <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#UE> .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/desireDevenir
+:desireDevenir rdf:type owl:ObjectProperty ;
+               rdfs:domain :Etudiant ;
+               rdfs:range :Metier .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/desireMaitriser
+:desireMaitriser rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Etudiant ;
+                 rdfs:range <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Competences> .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/enseigne
+:enseigne rdf:type owl:ObjectProperty ;
+          rdfs:domain :Expert ;
+          rdfs:range <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#ECUE> .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/necessiteMatriser
+:necessiteMatriser rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Metier ;
+                   rdfs:range <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Competences> .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/propose
+:propose rdf:type owl:ObjectProperty ;
+         rdfs:domain :Ecole ;
+         rdfs:range :Formation .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/seRapporteA
+:seRapporteA rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Competences> .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/specialisteEn
+:specialisteEn rdf:type owl:ObjectProperty ;
+               rdfs:domain :Metier .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/suit
+:suit rdf:type owl:ObjectProperty ;
+      rdfs:domain :Apprenant ;
+      rdfs:range :Formation .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/traite
+:traite rdf:type owl:ObjectProperty ;
+        rdfs:domain <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#ECUE> ;
+        rdfs:range <http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/AIApproaches> .
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdfs:domain :Etudiant ;
+                      rdfs:range :Formation .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#duree_en_heures
+<http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#duree_en_heures> rdfs:domain [ rdf:type owl:Class ;
+                                                                                                       owl:unionOf ( <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#ECUE>
+                                                                                                                     <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#UE>
+                                                                                                                     :Formation
+                                                                                                                   )
+                                                                                                     ] .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/cout
+:cout rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Formation ;
+      rdfs:range xsd:double .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/modalite
+:modalite rdf:type owl:DatatypeProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#UE>
+                                      :Formation
+                                    )
+                      ] ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/niveau_academique
+:niveau_academique rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Apprenant ;
+                   rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/note
+:note rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Formation ;
+      rdfs:range [ rdf:type rdfs:Datatype ;
+                   owl:onDatatype xsd:integer ;
+                   owl:withRestrictions ( [ xsd:minInclusive 0
+                                          ]
+                                          [ xsd:maxInclusive 5
+                                          ]
+                                        )
+                 ] .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/prérequis_academique
+:prérequis_academique rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Formation ;
+                      rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/AI_Ethics_Compliance_and_Governance
+:AI_Ethics_Compliance_and_Governance rdf:type owl:Class ;
+                                     rdfs:subClassOf :Metier .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/AI_Strategy_Product_and_Project_Management
+:AI_Strategy_Product_and_Project_Management rdf:type owl:Class ;
+                                            rdfs:subClassOf :Metier .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Apprenant
+:Apprenant rdf:type owl:Class ;
+           rdfs:subClassOf :Personne .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Computer_Vision_Engineer
+:Computer_Vision_Engineer rdf:type owl:Class ;
+                          rdfs:subClassOf :Metier .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Data_Science_and_Analytics
+:Data_Science_and_Analytics rdf:type owl:Class ;
+                            rdfs:subClassOf :Metier .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Ecole
+:Ecole rdf:type owl:Class ;
+       rdfs:label "École" .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Etudiant
+:Etudiant rdf:type owl:Class ;
+          rdfs:subClassOf :Apprenant .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Expert
+:Expert rdf:type owl:Class ;
+        rdfs:subClassOf :Personne .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/FISA
+:FISA rdf:type owl:Class ;
+      rdfs:subClassOf :Formation .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/FISE
+:FISE rdf:type owl:Class ;
+      rdfs:subClassOf :Formation .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/FTLV
+:FTLV rdf:type owl:Class ;
+      rdfs:subClassOf :Formation .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Formation
+:Formation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Handicap
+:Handicap rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/ML_Engineer
+:ML_Engineer rdf:type owl:Class ;
+             rdfs:subClassOf :Metier .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Metier
+:Metier rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/NLP_Engineer
+:NLP_Engineer rdf:type owl:Class ;
+              rdfs:subClassOf :Metier .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Personne
+:Personne rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Professionnel
+:Professionnel rdf:type owl:Class ;
+               rdfs:subClassOf :Apprenant .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/ResponsablePédagogique
+:ResponsablePédagogique rdf:type owl:Class ;
+                        rdfs:subClassOf :Personne .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Algorithmique_et_complexite
+<http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Algorithmique_et_complexite> :contientECUE <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Complexite_des_algorithmes_et_recursivite> ,
+                                                                                                                   <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Introduction_a_l_informatique_theorique> ,
+                                                                                                                   <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Programation_C> .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Collecte_manipulation_et_visualisation_des_donnees
+<http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Collecte_manipulation_et_visualisation_des_donnees> :contientECUE <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Collecte_des_donnees_et_plan_d_experiences> ,
+                                                                                                                                          <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Validation_visualisation_restitution_des_donnees> .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Conception_logicielle
+<http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Conception_logicielle> <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#duree_en_heures> 4 .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Developpements_Web_et_Mobile
+<http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Developpements_Web_et_Mobile> :contientECUE <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Developpement_Web> ,
+                                                                                                                    <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Informatique_mobile> .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Ingenierie_logicielle
+<http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Ingenierie_logicielle> :contientECUE <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Cas_d_etude> ,
+                                                                                                             <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Conception_logicielle> ,
+                                                                                                             <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Specifications_formelles> ;
+                                                                                               <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#duree_en_heures> 15 .
+
+
+###  http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Introduction_a_l_intelligence_artificielle
+<http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Introduction_a_l_intelligence_artificielle> :contientECUE <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Introduction_a_l_IA_symbolique> ,
+                                                                                                                                  <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Introduction_a_l_apprentissage_automatique> ,
+                                                                                                                                  <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Panorama_de_l_IA_definitions_enjeux_et_challenges> .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15#2IA
+<http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15#2IA> rdf:type owl:NamedIndividual ,
+                                                                                             :FISE ;
+                                                                                    :contientUE <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Algorithmique_et_complexite> ,
+                                                                                                <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Collecte_manipulation_et_visualisation_des_donnees> ,
+                                                                                                <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Developpements_Web_et_Mobile> ,
+                                                                                                <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Ingenierie_logicielle> ,
+                                                                                                <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Introduction_a_l_intelligence_artificielle> ;
+                                                                                    <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#duree_en_heures> 140 .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/AI_Compliance_Specialist
+:AI_Compliance_Specialist rdf:type owl:NamedIndividual ,
+                                   :AI_Ethics_Compliance_and_Governance ;
+                          :necessiteMatriser <http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Maitriser_le_fonctionnement_d_une_infrastructure_cloud_majeure> ;
+                          :specialisteEn :ChatbotCommercial .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/AI_Deployment_Engineer
+:AI_Deployment_Engineer rdf:type owl:NamedIndividual ,
+                                 :ML_Engineer ;
+                        :specialisteEn :TutoratIntelligent .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/AI_Ethics_Officer
+:AI_Ethics_Officer rdf:type owl:NamedIndividual ,
+                            :AI_Ethics_Compliance_and_Governance ;
+                   :specialisteEn :TutoratIntelligent .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/AI_Infrastructure_Engineer
+:AI_Infrastructure_Engineer rdf:type owl:NamedIndividual ,
+                                     :ML_Engineer ;
+                            :specialisteEn :OptimisationDesReseauxElectriques .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/AI_Product_Manager
+:AI_Product_Manager rdf:type owl:NamedIndividual ,
+                             :AI_Strategy_Product_and_Project_Management ;
+                    :specialisteEn :OptimisationDesReseauxElectriques .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/AI_Project_Manager
+:AI_Project_Manager rdf:type owl:NamedIndividual ,
+                             :AI_Strategy_Product_and_Project_Management ;
+                    :specialisteEn :DétectionDeFraudes .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/AI_Strategy_Consultant
+:AI_Strategy_Consultant rdf:type owl:NamedIndividual ,
+                                 :AI_Strategy_Product_and_Project_Management ;
+                        :specialisteEn :PréventionDuMarché .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Amaury_Fumard
+:Amaury_Fumard rdf:type owl:NamedIndividual ,
+                        :Etudiant ;
+               :desireDevenir :AI_Product_Manager ;
+               :desireMaitriser <http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Maitriser_le_fonctionnement_de_lecosysteme_Hadoop> ;
+               :suit <http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15#2IA> .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Auditif
+:Auditif rdf:type owl:NamedIndividual ,
+                  :Handicap .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Axel_Prouvost
+:Axel_Prouvost rdf:type owl:NamedIndividual ,
+                        :Etudiant ;
+               :desireDevenir :MLOps_Engineer ;
+               :desireMaitriser <http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Maitriser_la_statistique_descriptive> ;
+               :suit <http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15#2IA> .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Campus_Metiers_Aeronautique_Pays_Loire
+:Campus_Metiers_Aeronautique_Pays_Loire rdf:type owl:NamedIndividual ,
+                                                 :Ecole ;
+                                        rdfs:label "Campus des Métiers et Qualification d'Excellence Aéronautique – Pays-de-la-Loire" .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Campus_Metiers_Design_Industrie_Futur_Pays_Loire
+:Campus_Metiers_Design_Industrie_Futur_Pays_Loire rdf:type owl:NamedIndividual ,
+                                                           :Ecole ;
+                                                  rdfs:label "Campus des Métiers et Qualification Design et Industrie du Futur - Pays de la Loire" .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Campus_Metiers_Industrie_Futur_Occitanie
+:Campus_Metiers_Industrie_Futur_Occitanie rdf:type owl:NamedIndividual ,
+                                                   :Ecole ;
+                                          rdfs:label "Campus des Métiers et Qualification d'Excellence Industrie du Futur - Occitanie" .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/ChatbotCommercial
+:ChatbotCommercial rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Chatbot_Developer
+:Chatbot_Developer rdf:type owl:NamedIndividual ,
+                            :NLP_Engineer ;
+                   :specialisteEn :PréventionDuMarché .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Chronique
+:Chronique rdf:type owl:NamedIndividual ,
+                    :Handicap .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Data_Analyst
+:Data_Analyst rdf:type owl:NamedIndividual ,
+                       :Data_Science_and_Analytics ;
+              :specialisteEn :VehiculesAutonomes .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Data_Scientist
+:Data_Scientist rdf:type owl:NamedIndividual ,
+                         :Data_Science_and_Analytics ;
+                :specialisteEn :ChatbotCommercial .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/DiagnosticAssisté
+:DiagnosticAssisté rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/DétectionDeFraudes
+:DétectionDeFraudes rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/ESIGELEC
+:ESIGELEC rdf:type owl:NamedIndividual ,
+                   :Ecole ;
+          rdfs:label "ESIGELEC" .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/GestionDeDossiersMedicaux
+:GestionDeDossiersMedicaux rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Harispe
+:Harispe rdf:type owl:NamedIndividual ,
+                  :Expert ;
+         :enseigne <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Introduction_a_l_apprentissage_automatique> .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/IMT_Atlantique
+:IMT_Atlantique rdf:type owl:NamedIndividual ,
+                         :Ecole ;
+                rdfs:label "IMT Atlantique" .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/IMT_Business_School
+:IMT_Business_School rdf:type owl:NamedIndividual ,
+                              :Ecole ;
+                     rdfs:label "Institut Mines-Télécom Business School" .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/IMT_Mines_Albi
+:IMT_Mines_Albi rdf:type owl:NamedIndividual ,
+                         :Ecole ;
+                rdfs:label "IMT Mines Albi" .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/IMT_Mines_Ales
+:IMT_Mines_Ales rdf:type owl:NamedIndividual ,
+                         :Ecole ;
+                :propose <http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15#2IA> ;
+                rdfs:label "IMT Mines Alès" .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/IMT_Nord_Europe
+:IMT_Nord_Europe rdf:type owl:NamedIndividual ,
+                          :Ecole ;
+                 rdfs:label "IMT Nord Europe" .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Ingenieur_Reconnaissance_Objet
+:Ingenieur_Reconnaissance_Objet rdf:type owl:NamedIndividual ,
+                                         :Computer_Vision_Engineer ;
+                                :necessiteMatriser <http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_automatiser_l_optimisation_des_hyper_parametres> ;
+                                :specialisteEn :DiagnosticAssisté .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Janaqi
+:Janaqi rdf:type owl:NamedIndividual ,
+                 :Expert ;
+        :enseigne <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Introduction_a_l_IA_symbolique> ,
+                  <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Introduction_a_l_informatique_theorique> .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Jean_Dupont
+:Jean_Dupont rdf:type owl:NamedIndividual ,
+                      :Etudiant ;
+             :desireDevenir :AI_Infrastructure_Engineer ;
+             :suit <http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15#2IA> .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Lucie_Legarez
+:Lucie_Legarez rdf:type owl:NamedIndividual ,
+                        :Etudiant ;
+               :desireDevenir :AI_Strategy_Consultant ;
+               :desireMaitriser <http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_garantir_le_respect_du_calendrier> ,
+                                <http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_realiser_un_plan_projet> ;
+               :suit <http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15#2IA> .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Ludovic_Terrasson
+:Ludovic_Terrasson rdf:type owl:NamedIndividual ;
+                   :desireDevenir :AI_Project_Manager ;
+                   :suit <http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15#2IA> .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/MLOps_Engineer
+:MLOps_Engineer rdf:type owl:NamedIndividual ,
+                         :ML_Engineer ;
+                :specialisteEn :DétectionDeFraudes .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Machine_Translation_Engineer
+:Machine_Translation_Engineer rdf:type owl:NamedIndividual ,
+                                       :NLP_Engineer ;
+                              :specialisteEn :DiagnosticAssisté .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/MarcAlexandre_Michelin
+:MarcAlexandre_Michelin rdf:type owl:NamedIndividual ,
+                                 :Etudiant ;
+                        :desireDevenir :AI_Ethics_Officer ;
+                        :desireMaitriser <http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_documenter_les_modeles_par_exemple_avec_Jupyter_Notebook> ;
+                        :suit <http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15#2IA> .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Mehdi_Ougaamou
+:Mehdi_Ougaamou rdf:type owl:NamedIndividual ,
+                         :Etudiant ;
+                :desireDevenir :AI_Compliance_Specialist ;
+                :suit <http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15#2IA> .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Mines_Saint_Etienne
+:Mines_Saint_Etienne rdf:type owl:NamedIndividual ,
+                              :Ecole ;
+                     rdfs:label "Mines Saint-Étienne" .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Moteur
+:Moteur rdf:type owl:NamedIndividual ,
+                 :Handicap .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Omar_Benouahi
+:Omar_Benouahi rdf:type owl:NamedIndividual ,
+                        :Etudiant ;
+               :desireDevenir :AI_Product_Manager ;
+               :suit <http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15#2IA> .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/OptimisationDesReseauxElectriques
+:OptimisationDesReseauxElectriques rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Pierre_Martin
+:Pierre_Martin rdf:type owl:NamedIndividual ,
+                        :Professionnel .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/PréventionDuMarché
+:PréventionDuMarché rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Raphael_Seve
+:Raphael_Seve rdf:type owl:NamedIndividual ,
+                       :Etudiant ;
+              :desireDevenir :AI_Project_Manager ;
+              :suit <http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15#2IA> .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Speech_Processing_Engineer
+:Speech_Processing_Engineer rdf:type owl:NamedIndividual ,
+                                     :NLP_Engineer ;
+                            :specialisteEn :GestionDeDossiersMedicaux .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Telecom_Paris
+:Telecom_Paris rdf:type owl:NamedIndividual ,
+                        :Ecole ;
+               rdfs:label "Télécom Paris" .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Telecom_Sud_Paris
+:Telecom_Sud_Paris rdf:type owl:NamedIndividual ,
+                            :Ecole ;
+                   rdfs:label "Télécom Sud Paris" .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/TutoratIntelligent
+:TutoratIntelligent rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/UTT
+:UTT rdf:type owl:NamedIndividual ,
+              :Ecole ;
+     rdfs:label "Université de Technologie de Troyes (UTT)" .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Vauttiez
+:Vauttiez rdf:type owl:NamedIndividual ,
+                   :Expert ;
+          :enseigne <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Conception_logicielle> ,
+                    <http://www.semanticweb.org/axelp/ontologies/2025/0/untitled-ontology-9#Developpement_Web> .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/VehiculesAutonomes
+:VehiculesAutonomes rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Video_Processing_Specialist
+:Video_Processing_Specialist rdf:type owl:NamedIndividual ,
+                                      :Computer_Vision_Engineer ;
+                             :specialisteEn :GestionDeDossiersMedicaux .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Visuel
+:Visuel rdf:type owl:NamedIndividual ,
+                 :Handicap .
+
+
+###  http://www.semanticweb.org/raphaelseve/ontologies/2025/0/untitled-ontology-15/Youssef_ElOthmani
+:Youssef_ElOthmani rdf:type owl:NamedIndividual ,
+                            :Etudiant .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

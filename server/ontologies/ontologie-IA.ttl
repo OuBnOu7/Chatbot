@@ -1,0 +1,1000 @@
+@base <http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/> .
+@prefix : <http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/AIApproaches
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Academic
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Algebra
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/ApplicationFields
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Audio
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/AutonomousVehicles
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Bias
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Classification
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Clustering
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/CognitiveModels
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Combinatory
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Data
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/DeepLearning
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/DimensionalityReduction
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Environmental
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Ethical
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/EthicsAndAI
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Frameworks
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Hardware
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Healthcare
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Heuristics
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Image
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Industrial
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/KnowledgeRepresentation
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/LSTM
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Languages
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/MachineLearning
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Manufacturing
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Mathematics
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/MedicalImages
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Misinformation
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/NLP
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Neurosciences
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Operational
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Optimization
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Privacy
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Probabilities
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/QuantumComputing
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/RNN
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/RecommenderSystems
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Regression
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/ReinforcementLearning
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/ResearchAndDevelopment
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Retail
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Risks
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Robotics
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Security
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/SemiStructuredData
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Societal
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Statistics
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/StructuredData
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/SupervisedLearning
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Symbolic
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Symbolism
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Theory
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Tools
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/UnstructuredData
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/UnsupervisedLearning
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Video
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology#Etre_capable_d'identifier_les_sujets_relevants_de_l_IA
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/AssistantRobots
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/AutonomousVehicles
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Bayesian
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Boolean
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/BreastCancerDetection
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/CNN
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Connaitre_les_benefices_et_les_impacts_de_l_IA
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Connaitre_les_differentes_formes_d_apprentissage_machine
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Connaitre_les_methodes_de_gestion_DataOps_et_DevOps
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Connaitre_les_principaux_algorithmes_d_IA_du_domaine_public
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Connaitre_les_sources_de_donnees_open_source
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/DataPrivacy
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/DeepFake
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/EnergyConsumption
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Etre_capable_d_appliquer_les_regles_du_RGPD
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Etre_capable_d_assembler_la_chaine_de_traitement_des_differents_modeles
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Etre_capable_d_evaluer_la_faisabilite_d_un_projet
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Etre_capable_de_mettre_en_oeuvre_du_machine_learning_non_supervise
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Etre_capable_de_mettre_en_oeuvre_du_machine_learning_supervise
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Etre_capable_de_produire_du_code_industrialisable_par_exemple_en_utilisant_des_notebooks_et_gerer_les_versions_de_modeles_par_exemple_avec_Git_GitHub
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Etre_capable_de_reconnaitre_le_caractere_ethique_ou_non_ethique_des_donnees
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/GPU
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/GreedySearch
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/JPEG
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/JSON
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/JobDisparition
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/K-Means
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/LSTM
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/LawOfLargeNumbers
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Linear
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/LinearRegression
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/LogisticRegression
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/MLP
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/MOV
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Maitriser_l_analyse_statistique_des_correlations
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Maitriser_la_methode_devops_en_lien_avec_la_methode_MLOps_dataops
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Maitriser_la_statistique_descriptive
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Maitriser_le_fonctionnement_d_une_infrastructure_cloud_majeure
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Maitriser_le_fonctionnement_de_lecosysteme_Hadoop
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Maitriser_le_fonctionnement_de_lecosysteme_Spark
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Maitriser_le_fonctionnement_des_bases_de_donnees_NoSql
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Maitriser_le_fonctionnement_des_bases_de_donnees_SQL
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Maitriser_les_differentes_methodes_de_test_d_hypotheses
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Maitriser_les_methodes_d_optimisation_de_complexite_et_de_cross_validation_des_modeles
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Maitriser_les_methodes_statistiques_de_monitoring_des_modeles_de_Machine_Learning
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Maitriser_les_principales_methodes_de_clustering_et_de_typologies_non_supervisees
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Maitriser_les_principales_methodes_de_reduction_de_dimension_non_supervisees
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Mettre_en_oeuvre_la_mesure_de_la_performance_des_traitements_sur_linfrastructure_cible
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/ModelBias
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/MovieRS
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/PCA
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/PNG
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/PersonalInformation
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/PersonalInformationPrivacy
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Pouvoir_creer_des_jeux_de_donnees_de_test
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Pouvoir_identifier_et_gerer_les_donnees_manquantes
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Pouvoir_identifier_les_donnees_atypiques_et_ou_aberrantes
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Pouvoir_identifier_les_goulots_detranglement_et_les_traitements_critiques
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/PredictiveMaintenance
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/PyTorch
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Python
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/R
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/SVM
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/SamplingBias
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_accompagner_les_equipes_metiers
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_automatiser_l_optimisation_des_hyper_parametres
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_calculer_et_mesurer_la_variance_des_residus_d_un_modele_quantitatif
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_choisir_les_hyper_parametres_pour_faciliter_l_automatisation
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_configurer_les_seuils_d_alertes_en_cas_de_dysfonctionnement_des_modeles
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_construire_le_workflow_graphique_d_un_modele
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_creer_les_indicateurs_pour_valider_ou_rejeter_les_modeles_testes
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_creer_un_jeu_de_donnees_pertinent_pour_la_cross_validation
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_developper_un_modele_d_IA_symbolique
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_developper_un_modele_multiagent
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_documenter_les_modeles_avec_Jupyter_Notebook
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_documenter_les_modeles_par_exemple_avec_Jupyter_Notebook
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_elaborer_des_plans_de_formation_pour_accompagner_le_changement
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_elaborer_une_strategie_de_communication_aupres_des_acteurs_du_projet_IA
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_encadrer_une_equipe_projet_IA
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_entrainer_les_algorithmes_d_apprentissage
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_evaluer_et_mettre_en_place_des_best_practices_d_utilisation_frugale_de_l_IA
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_evaluer_la_complexite_d_une_problematique_IA
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_evaluer_les_impacts_d_un_projet_IA_au_vu_de_la_reglementation
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_eviter_un_biais_dans_les_donnees_d_apprentissage
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_expliquer_les_problematiques_typiques_en_IA
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_expliquer_les_risques_des_modeles
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_exploiter_les_resultats_d_une_strategie_inferentielle_de_cross_validation
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_garantir_le_respect_du_calendrier
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_generer_de_nouvelles_variables_feature_engineering
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_identifier_la_bonne_infrastructure_et_les_differents_types_dinfrastructure
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_identifier_le_contexte__les_enjeux__les_objectifs_et_les_contraintes_de_l_entreprise
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_identifier_les_actions_a_mener_pour_optimiser_les_process_internes__suite_au_projet_IA
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_identifier_les_algorithmes_utilisables
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_identifier_les_derives_des_modeles
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_identifier_les_differents_process_metier_potentiellement_impactes_par_l_IA
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_identifier_les_parties_prenantes__MOA__MOE__et_les_canaux_de_communication
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_illustrer_les_resultats_du_modele_par_des_graphiques_comprehensibles_par_les_metiers
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_implementer_des_pistes_d_auditabilite_et_de_traceabilite
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_impliquer_les_directions_metiers
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_integrer_les_resultats_dans_les_applications_digitales_de_l_entreprise
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_integrer_une_demarche_ethique_dans_les_projets_IA
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_interpreter_les_resultats_des_differents_modeles_et_en_expliquer_les_resultats
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_mesurer_la_performance_des_modeles
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_mesurer_la_robustesse_statistique_des_modeles
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_mesurer_les_depenses_energetiques_de_l_IA
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_mesurer_les_ecarts_non_conformites_et_les_communiquer
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_mesurer_les_impacts_des_resultats
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_mettre_en_oeuvre_des_procedures_de_mesure_et_controle_des_impacts
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_mettre_en_oeuvre_une_approche_ethique_pour_mesurer_l_impact_des_changements
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_mettre_en_place_des_procedures_de_protection_des_donnees_personnelles
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_mettre_en_place_le_RGPD
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_mettre_en_place_une_gouvernance_de_controle_des_risques
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_mettre_en_place_une_methodologie_de_mesure_des_risques
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_mettre_en_place_une_veille_sur_l_ethique_de_l_IA
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_mettre_en_place_une_veille_sur_la_reglementation_de_l_IA
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_mettre_en_uvre_une_strategie_d_inference
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_optimiser_le_compromis_explicabilite_traceabilite_precision_des_algorithmes
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_orchestrer_un_ensemble_d_algorithmes
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_paralleliser_les_traitements_sur_infrastructure_Spark
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_presenter_des_visualisations_des_donnees_comprehensibles_par_les_metiers
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_presenter_les_biais_des_modeles
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_produire_la_matrice_de_confusion_d_un_modele_de_classification
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_produire_le_plan_de_changement
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_produire_une_etude_de_cadrage_pour_accompagner_le_changement_par_des_projets_IA
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_programmer_avec_Hive
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_programmer_en_Java
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_programmer_en_PySpark_avec_Spark_ML
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_programmer_en_Scala
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_programmer_en_Scala_avec_Spark_ML
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_programmer_le_recodage_des_donnees
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_programmer_les_indicateurs_necessaires
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_proposer_des_algorithmes_IA_plus_frugaux
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_realiser_un_audit_de_qualite_de_donnees
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_realiser_un_plan_projet
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_s_assurer_de_l_absence_de_biais_dans_les_resultats_du_modele
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_s_assurer_du_respect_des_hypotheses_de_fonctionnement_des_modeles
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_scenariser_des_implementations_possibles_de_cas_relevant_de_l_IA
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_selectionner_les_observations_illustrant_le_comportement_typique_des_modeles
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_specifier_les_conditions_d_utilisation_des_modeles_d_IA
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_traduire_les_besoins_en_termes_de_transfert_de_competences
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_traiter_les_valeurs_aberrantes
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_traiter_les_valeurs_manquantes
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_utiliser_des_modeles_explicatifs_pour_pouvoir_rendre_tracables_expliquables_les_modeles
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_utiliser_la_librairie_Numpy_en_langage_Python
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_utiliser_la_librairie_Pandas_en_langage_Python
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_utiliser_la_methode_MLOps_pour_mener_a_bien_un_projet
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_utiliser_le_logiciel_Kafka
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_utiliser_les_algorithmes_du_domaine_public_pour_creer_un_modele
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_utiliser_les_methodes_agiles
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_utiliser_les_principales_librairies_d_IA_en_Python
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_utiliser_un_modele_generatif_GAN
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Savoir_utiliser_un_simulateur_jumeau_numerique
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Scalability
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Scikit-learn
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Server
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/ShoppingRS
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/SimulatedAnnealing
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/SystemFailure
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Tabular
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/TensorFlow
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/Transformers
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/XML
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/k-NN
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/mp3
+# 
+# http://www.semanticweb.org/raphaelseve/ontologies/2025/0/ai-ontology/mp4
+# 
+# Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
+
+<../ai-ontology> a owl:Ontology .
+
+:AIApproaches a owl:Class .
+
+:Academic a owl:Class;
+  rdfs:subClassOf :ApplicationFields .
+
+:Algebra a owl:Class;
+  rdfs:subClassOf :Mathematics .
+
+:ApplicationFields a owl:Class .
+
+:Audio a owl:Class;
+  rdfs:subClassOf :UnstructuredData .
+
+:AutonomousVehicles a owl:Class, owl:NamedIndividual, :ResearchAndDevelopment;
+  rdfs:subClassOf :ResearchAndDevelopment .
+
+:Bias a owl:Class;
+  rdfs:subClassOf :Ethical .
+
+:Classification a owl:Class;
+  rdfs:subClassOf :SupervisedLearning .
+
+:Clustering a owl:Class;
+  rdfs:subClassOf :UnsupervisedLearning .
+
+:CognitiveModels a owl:Class;
+  rdfs:subClassOf :Symbolic .
+
+:Combinatory a owl:Class;
+  rdfs:subClassOf :Probabilities .
+
+:Data a owl:Class .
+
+:DeepLearning a owl:Class;
+  rdfs:subClassOf :SupervisedLearning .
+
+:DimensionalityReduction a owl:Class;
+  rdfs:subClassOf :UnsupervisedLearning .
+
+:Environmental a owl:Class;
+  rdfs:subClassOf :Risks .
+
+:Ethical a owl:Class;
+  rdfs:subClassOf :Risks .
+
+:EthicsAndAI a owl:Class;
+  rdfs:subClassOf :Academic .
+
+:Frameworks a owl:Class;
+  rdfs:subClassOf :Tools .
+
+:Hardware a owl:Class;
+  rdfs:subClassOf :Tools .
+
+:Healthcare a owl:Class;
+  rdfs:subClassOf :Industrial .
+
+:Heuristics a owl:Class;
+  rdfs:subClassOf :Optimization .
+
+:Image a owl:Class;
+  rdfs:subClassOf :UnstructuredData .
+
+:Industrial a owl:Class;
+  rdfs:subClassOf :ApplicationFields .
+
+:KnowledgeRepresentation a owl:Class;
+  rdfs:subClassOf :Symbolic .
+
+:LSTM a owl:Class, owl:NamedIndividual, :RNN;
+  rdfs:subClassOf :RNN .
+
+:Languages a owl:Class;
+  rdfs:subClassOf :Tools .
+
+:MachineLearning a owl:Class;
+  rdfs:subClassOf :AIApproaches .
+
+:Manufacturing a owl:Class;
+  rdfs:subClassOf :Industrial .
+
+:Mathematics a owl:Class;
+  rdfs:subClassOf :Theory .
+
+:MedicalImages a owl:Class;
+  rdfs:subClassOf :Healthcare .
+
+:Misinformation a owl:Class;
+  rdfs:subClassOf :Societal .
+
+:NLP a owl:Class;
+  rdfs:subClassOf :Academic .
+
+:Neurosciences a owl:Class;
+  rdfs:subClassOf :Academic .
+
+:Operational a owl:Class;
+  rdfs:subClassOf :Risks .
+
+:Optimization a owl:Class;
+  rdfs:subClassOf :Mathematics .
+
+:Privacy a owl:Class;
+  rdfs:subClassOf :Ethical .
+
+:Probabilities a owl:Class;
+  rdfs:subClassOf :Mathematics .
+
+:QuantumComputing a owl:Class;
+  rdfs:subClassOf :ResearchAndDevelopment .
+
+:RNN a owl:Class;
+  rdfs:subClassOf :DeepLearning .
+
+:RecommenderSystems a owl:Class;
+  rdfs:subClassOf :Retail .
+
+:Regression a owl:Class;
+  rdfs:subClassOf :SupervisedLearning .
+
+:ReinforcementLearning a owl:Class;
+  rdfs:subClassOf :Academic .
+
+:ResearchAndDevelopment a owl:Class;
+  rdfs:subClassOf :ApplicationFields .
+
+:Retail a owl:Class;
+  rdfs:subClassOf :Industrial .
+
+:Risks a owl:Class .
+
+:Robotics a owl:Class;
+  rdfs:subClassOf :ResearchAndDevelopment .
+
+:Security a owl:Class;
+  rdfs:subClassOf :Risks .
+
+:SemiStructuredData a owl:Class;
+  rdfs:subClassOf :Data .
+
+:Societal a owl:Class;
+  rdfs:subClassOf :Risks .
+
+:Statistics a owl:Class;
+  rdfs:subClassOf :Mathematics .
+
+:StructuredData a owl:Class;
+  rdfs:subClassOf :Data .
+
+:SupervisedLearning a owl:Class;
+  rdfs:subClassOf :MachineLearning .
+
+:Symbolic a owl:Class;
+  rdfs:subClassOf :AIApproaches .
+
+:Symbolism a owl:Class;
+  rdfs:subClassOf :Symbolic .
+
+:Theory a owl:Class;
+  rdfs:subClassOf :Tools .
+
+:Tools a owl:Class .
+
+:UnstructuredData a owl:Class;
+  rdfs:subClassOf :Data .
+
+:UnsupervisedLearning a owl:Class;
+  rdfs:subClassOf :MachineLearning .
+
+:Video a owl:Class;
+  rdfs:subClassOf :UnstructuredData .
+
+<../ai-ontology#Etre_capable_d'identifier_les_sujets_relevants_de_l_IA> a owl:NamedIndividual .
+
+:AssistantRobots a owl:NamedIndividual, :Robotics .
+
+:Bayesian a owl:NamedIndividual, :Statistics .
+
+:Boolean a owl:NamedIndividual, :Algebra .
+
+:BreastCancerDetection a owl:NamedIndividual, :MedicalImages .
+
+:CNN a owl:NamedIndividual, :DeepLearning .
+
+:Connaitre_les_benefices_et_les_impacts_de_l_IA a owl:NamedIndividual .
+
+:Connaitre_les_differentes_formes_d_apprentissage_machine a owl:NamedIndividual .
+
+:Connaitre_les_methodes_de_gestion_DataOps_et_DevOps a owl:NamedIndividual .
+
+:Connaitre_les_principaux_algorithmes_d_IA_du_domaine_public a owl:NamedIndividual .
+
+:Connaitre_les_sources_de_donnees_open_source a owl:NamedIndividual .
+
+:DataPrivacy a owl:NamedIndividual, :Privacy .
+
+:DeepFake a owl:NamedIndividual, :Misinformation .
+
+:EnergyConsumption a owl:NamedIndividual, :Environmental .
+
+:Etre_capable_d_appliquer_les_regles_du_RGPD a owl:NamedIndividual .
+
+:Etre_capable_d_assembler_la_chaine_de_traitement_des_differents_modeles a owl:NamedIndividual .
+
+:Etre_capable_d_evaluer_la_faisabilite_d_un_projet a owl:NamedIndividual .
+
+:Etre_capable_de_mettre_en_oeuvre_du_machine_learning_non_supervise a owl:NamedIndividual .
+
+:Etre_capable_de_mettre_en_oeuvre_du_machine_learning_supervise a owl:NamedIndividual .
+
+:Etre_capable_de_produire_du_code_industrialisable_par_exemple_en_utilisant_des_notebooks_et_gerer_les_versions_de_modeles_par_exemple_avec_Git_GitHub
+  a owl:NamedIndividual .
+
+:Etre_capable_de_reconnaitre_le_caractere_ethique_ou_non_ethique_des_donnees a owl:NamedIndividual .
+
+:GPU a owl:NamedIndividual, :Hardware .
+
+:GreedySearch a owl:NamedIndividual, :Heuristics .
+
+:JPEG a owl:NamedIndividual, :Image .
+
+:JSON a owl:NamedIndividual, :SemiStructuredData .
+
+:JobDisparition a owl:NamedIndividual, :Societal .
+
+:K-Means a owl:NamedIndividual, :Clustering .
+
+:LawOfLargeNumbers a owl:NamedIndividual, :Combinatory .
+
+:Linear a owl:NamedIndividual, :Algebra .
+
+:LinearRegression a owl:NamedIndividual, :Regression .
+
+:LogisticRegression a owl:NamedIndividual, :Regression .
+
+:MLP a owl:NamedIndividual, :DeepLearning .
+
+:MOV a owl:NamedIndividual, :Video .
+
+:Maitriser_l_analyse_statistique_des_correlations a owl:NamedIndividual .
+
+:Maitriser_la_methode_devops_en_lien_avec_la_methode_MLOps_dataops a owl:NamedIndividual .
+
+:Maitriser_la_statistique_descriptive a owl:NamedIndividual .
+
+:Maitriser_le_fonctionnement_d_une_infrastructure_cloud_majeure a owl:NamedIndividual .
+
+:Maitriser_le_fonctionnement_de_lecosysteme_Hadoop a owl:NamedIndividual .
+
+:Maitriser_le_fonctionnement_de_lecosysteme_Spark a owl:NamedIndividual .
+
+:Maitriser_le_fonctionnement_des_bases_de_donnees_NoSql a owl:NamedIndividual .
+
+:Maitriser_le_fonctionnement_des_bases_de_donnees_SQL a owl:NamedIndividual .
+
+:Maitriser_les_differentes_methodes_de_test_d_hypotheses a owl:NamedIndividual .
+
+:Maitriser_les_methodes_d_optimisation_de_complexite_et_de_cross_validation_des_modeles
+  a owl:NamedIndividual .
+
+:Maitriser_les_methodes_statistiques_de_monitoring_des_modeles_de_Machine_Learning
+  a owl:NamedIndividual .
+
+:Maitriser_les_principales_methodes_de_clustering_et_de_typologies_non_supervisees
+  a owl:NamedIndividual .
+
+:Maitriser_les_principales_methodes_de_reduction_de_dimension_non_supervisees a owl:NamedIndividual .
+
+:Mettre_en_oeuvre_la_mesure_de_la_performance_des_traitements_sur_linfrastructure_cible
+  a owl:NamedIndividual .
+
+:ModelBias a owl:NamedIndividual, :Bias .
+
+:MovieRS a owl:NamedIndividual, :RecommenderSystems .
+
+:PCA a owl:NamedIndividual, :DimensionalityReduction .
+
+:PNG a owl:NamedIndividual, :Image .
+
+:PersonalInformation a owl:NamedIndividual .
+
+:PersonalInformationPrivacy a owl:NamedIndividual, :Privacy .
+
+:Pouvoir_creer_des_jeux_de_donnees_de_test a owl:NamedIndividual .
+
+:Pouvoir_identifier_et_gerer_les_donnees_manquantes a owl:NamedIndividual .
+
+:Pouvoir_identifier_les_donnees_atypiques_et_ou_aberrantes a owl:NamedIndividual .
+
+:Pouvoir_identifier_les_goulots_detranglement_et_les_traitements_critiques a owl:NamedIndividual .
+
+:PredictiveMaintenance a owl:NamedIndividual, :Manufacturing .
+
+:PyTorch a owl:NamedIndividual, :Frameworks .
+
+:Python a owl:NamedIndividual, :Languages .
+
+:R a owl:NamedIndividual, :Languages .
+
+:SVM a owl:NamedIndividual, :Classification .
+
+:SamplingBias a owl:NamedIndividual, :Bias .
+
+:Savoir_accompagner_les_equipes_metiers a owl:NamedIndividual .
+
+:Savoir_automatiser_l_optimisation_des_hyper_parametres a owl:NamedIndividual .
+
+:Savoir_calculer_et_mesurer_la_variance_des_residus_d_un_modele_quantitatif a owl:NamedIndividual .
+
+:Savoir_choisir_les_hyper_parametres_pour_faciliter_l_automatisation a owl:NamedIndividual .
+
+:Savoir_configurer_les_seuils_d_alertes_en_cas_de_dysfonctionnement_des_modeles a
+    owl:NamedIndividual .
+
+:Savoir_construire_le_workflow_graphique_d_un_modele a owl:NamedIndividual .
+
+:Savoir_creer_les_indicateurs_pour_valider_ou_rejeter_les_modeles_testes a owl:NamedIndividual .
+
+:Savoir_creer_un_jeu_de_donnees_pertinent_pour_la_cross_validation a owl:NamedIndividual .
+
+:Savoir_developper_un_modele_d_IA_symbolique a owl:NamedIndividual .
+
+:Savoir_developper_un_modele_multiagent a owl:NamedIndividual .
+
+:Savoir_documenter_les_modeles_avec_Jupyter_Notebook a owl:NamedIndividual .
+
+:Savoir_documenter_les_modeles_par_exemple_avec_Jupyter_Notebook a owl:NamedIndividual .
+
+:Savoir_elaborer_des_plans_de_formation_pour_accompagner_le_changement a owl:NamedIndividual .
+
+:Savoir_elaborer_une_strategie_de_communication_aupres_des_acteurs_du_projet_IA a
+    owl:NamedIndividual .
+
+:Savoir_encadrer_une_equipe_projet_IA a owl:NamedIndividual .
+
+:Savoir_entrainer_les_algorithmes_d_apprentissage a owl:NamedIndividual .
+
+:Savoir_evaluer_et_mettre_en_place_des_best_practices_d_utilisation_frugale_de_l_IA
+  a owl:NamedIndividual .
+
+:Savoir_evaluer_la_complexite_d_une_problematique_IA a owl:NamedIndividual .
+
+:Savoir_evaluer_les_impacts_d_un_projet_IA_au_vu_de_la_reglementation a owl:NamedIndividual .
+
+:Savoir_eviter_un_biais_dans_les_donnees_d_apprentissage a owl:NamedIndividual .
+
+:Savoir_expliquer_les_problematiques_typiques_en_IA a owl:NamedIndividual .
+
+:Savoir_expliquer_les_risques_des_modeles a owl:NamedIndividual .
+
+:Savoir_exploiter_les_resultats_d_une_strategie_inferentielle_de_cross_validation
+  a owl:NamedIndividual .
+
+:Savoir_garantir_le_respect_du_calendrier a owl:NamedIndividual .
+
+:Savoir_generer_de_nouvelles_variables_feature_engineering a owl:NamedIndividual .
+
+:Savoir_identifier_la_bonne_infrastructure_et_les_differents_types_dinfrastructure
+  a owl:NamedIndividual .
+
+:Savoir_identifier_le_contexte__les_enjeux__les_objectifs_et_les_contraintes_de_l_entreprise
+  a owl:NamedIndividual .
+
+:Savoir_identifier_les_actions_a_mener_pour_optimiser_les_process_internes__suite_au_projet_IA
+  a owl:NamedIndividual .
+
+:Savoir_identifier_les_algorithmes_utilisables a owl:NamedIndividual .
+
+:Savoir_identifier_les_derives_des_modeles a owl:NamedIndividual .
+
+:Savoir_identifier_les_differents_process_metier_potentiellement_impactes_par_l_IA
+  a owl:NamedIndividual .
+
+:Savoir_identifier_les_parties_prenantes__MOA__MOE__et_les_canaux_de_communication
+  a owl:NamedIndividual .
+
+:Savoir_illustrer_les_resultats_du_modele_par_des_graphiques_comprehensibles_par_les_metiers
+  a owl:NamedIndividual .
+
+:Savoir_implementer_des_pistes_d_auditabilite_et_de_traceabilite a owl:NamedIndividual .
+
+:Savoir_impliquer_les_directions_metiers a owl:NamedIndividual .
+
+:Savoir_integrer_les_resultats_dans_les_applications_digitales_de_l_entreprise a owl:NamedIndividual .
+
+:Savoir_integrer_une_demarche_ethique_dans_les_projets_IA a owl:NamedIndividual .
+
+:Savoir_interpreter_les_resultats_des_differents_modeles_et_en_expliquer_les_resultats
+  a owl:NamedIndividual .
+
+:Savoir_mesurer_la_performance_des_modeles a owl:NamedIndividual .
+
+:Savoir_mesurer_la_robustesse_statistique_des_modeles a owl:NamedIndividual .
+
+:Savoir_mesurer_les_depenses_energetiques_de_l_IA a owl:NamedIndividual .
+
+:Savoir_mesurer_les_ecarts_non_conformites_et_les_communiquer a owl:NamedIndividual .
+
+:Savoir_mesurer_les_impacts_des_resultats a owl:NamedIndividual .
+
+:Savoir_mettre_en_oeuvre_des_procedures_de_mesure_et_controle_des_impacts a owl:NamedIndividual .
+
+:Savoir_mettre_en_oeuvre_une_approche_ethique_pour_mesurer_l_impact_des_changements
+  a owl:NamedIndividual .
+
+:Savoir_mettre_en_place_des_procedures_de_protection_des_donnees_personnelles a owl:NamedIndividual .
+
+:Savoir_mettre_en_place_le_RGPD a owl:NamedIndividual .
+
+:Savoir_mettre_en_place_une_gouvernance_de_controle_des_risques a owl:NamedIndividual .
+
+:Savoir_mettre_en_place_une_methodologie_de_mesure_des_risques a owl:NamedIndividual .
+
+:Savoir_mettre_en_place_une_veille_sur_l_ethique_de_l_IA a owl:NamedIndividual .
+
+:Savoir_mettre_en_place_une_veille_sur_la_reglementation_de_l_IA a owl:NamedIndividual .
+
+:Savoir_mettre_en_uvre_une_strategie_d_inference a owl:NamedIndividual .
+
+:Savoir_optimiser_le_compromis_explicabilite_traceabilite_precision_des_algorithmes
+  a owl:NamedIndividual .
+
+:Savoir_orchestrer_un_ensemble_d_algorithmes a owl:NamedIndividual .
+
+:Savoir_paralleliser_les_traitements_sur_infrastructure_Spark a owl:NamedIndividual .
+
+:Savoir_presenter_des_visualisations_des_donnees_comprehensibles_par_les_metiers a
+    owl:NamedIndividual .
+
+:Savoir_presenter_les_biais_des_modeles a owl:NamedIndividual .
+
+:Savoir_produire_la_matrice_de_confusion_d_un_modele_de_classification a owl:NamedIndividual .
+
+:Savoir_produire_le_plan_de_changement a owl:NamedIndividual .
+
+:Savoir_produire_une_etude_de_cadrage_pour_accompagner_le_changement_par_des_projets_IA
+  a owl:NamedIndividual .
+
+:Savoir_programmer_avec_Hive a owl:NamedIndividual .
+
+:Savoir_programmer_en_Java a owl:NamedIndividual .
+
+:Savoir_programmer_en_PySpark_avec_Spark_ML a owl:NamedIndividual .
+
+:Savoir_programmer_en_Scala a owl:NamedIndividual .
+
+:Savoir_programmer_en_Scala_avec_Spark_ML a owl:NamedIndividual .
+
+:Savoir_programmer_le_recodage_des_donnees a owl:NamedIndividual .
+
+:Savoir_programmer_les_indicateurs_necessaires a owl:NamedIndividual .
+
+:Savoir_proposer_des_algorithmes_IA_plus_frugaux a owl:NamedIndividual .
+
+:Savoir_realiser_un_audit_de_qualite_de_donnees a owl:NamedIndividual .
+
+:Savoir_realiser_un_plan_projet a owl:NamedIndividual .
+
+:Savoir_s_assurer_de_l_absence_de_biais_dans_les_resultats_du_modele a owl:NamedIndividual .
+
+:Savoir_s_assurer_du_respect_des_hypotheses_de_fonctionnement_des_modeles a owl:NamedIndividual .
+
+:Savoir_scenariser_des_implementations_possibles_de_cas_relevant_de_l_IA a owl:NamedIndividual .
+
+:Savoir_selectionner_les_observations_illustrant_le_comportement_typique_des_modeles
+  a owl:NamedIndividual .
+
+:Savoir_specifier_les_conditions_d_utilisation_des_modeles_d_IA a owl:NamedIndividual .
+
+:Savoir_traduire_les_besoins_en_termes_de_transfert_de_competences a owl:NamedIndividual .
+
+:Savoir_traiter_les_valeurs_aberrantes a owl:NamedIndividual .
+
+:Savoir_traiter_les_valeurs_manquantes a owl:NamedIndividual .
+
+:Savoir_utiliser_des_modeles_explicatifs_pour_pouvoir_rendre_tracables_expliquables_les_modeles
+  a owl:NamedIndividual .
+
+:Savoir_utiliser_la_librairie_Numpy_en_langage_Python a owl:NamedIndividual .
+
+:Savoir_utiliser_la_librairie_Pandas_en_langage_Python a owl:NamedIndividual .
+
+:Savoir_utiliser_la_methode_MLOps_pour_mener_a_bien_un_projet a owl:NamedIndividual .
+
+:Savoir_utiliser_le_logiciel_Kafka a owl:NamedIndividual .
+
+:Savoir_utiliser_les_algorithmes_du_domaine_public_pour_creer_un_modele a owl:NamedIndividual .
+
+:Savoir_utiliser_les_methodes_agiles a owl:NamedIndividual .
+
+:Savoir_utiliser_les_principales_librairies_d_IA_en_Python a owl:NamedIndividual .
+
+:Savoir_utiliser_un_modele_generatif_GAN a owl:NamedIndividual .
+
+:Savoir_utiliser_un_simulateur_jumeau_numerique a owl:NamedIndividual .
+
+:Scalability a owl:NamedIndividual, :Operational .
+
+:Scikit-learn a owl:NamedIndividual, :Frameworks .
+
+:Server a owl:NamedIndividual, :Hardware .
+
+:ShoppingRS a owl:NamedIndividual, :RecommenderSystems .
+
+:SimulatedAnnealing a owl:NamedIndividual, :Heuristics .
+
+:SystemFailure a owl:NamedIndividual, :Operational .
+
+:Tabular a owl:NamedIndividual, :StructuredData .
+
+:TensorFlow a owl:NamedIndividual, :Frameworks .
+
+:Transformers a owl:NamedIndividual, :DeepLearning .
+
+:XML a owl:NamedIndividual, :SemiStructuredData .
+
+:k-NN a owl:NamedIndividual, :Classification .
+
+:mp3 a owl:NamedIndividual, :Audio .
+
+:mp4 a owl:NamedIndividual, :Video .
